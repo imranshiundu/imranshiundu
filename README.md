@@ -278,15 +278,17 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
+## How to Reach Me for Collaboration
+
+<div align="center">
+
 ### Quick Collaboration Request
 
 [![Open Collaboration Request](https://img.shields.io/badge/🤝_Submit_Collaboration_Request-B794F4?style=for-the-badge)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
 
 **Click above and I'll get an email notification within minutes!**
 
----
-
-**I respond to collaboration requests within 24 hours!**
+<br />
 
 <table>
 <tr>
@@ -298,8 +300,6 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 **imranshiundu@gmail.com**
 
-Best for: Project proposals, partnerships, consulting inquiries
-
 </td>
 <td align="center" width="33%">
 
@@ -307,39 +307,22 @@ Best for: Project proposals, partnerships, consulting inquiries
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imranshiundu)
 
-Best for: Professional networking, job opportunities
+**Connect Professionally**
 
 </td>
 <td align="center" width="33%">
 
-### Portfolio Contact
+### Portfolio
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
 
-Best for: Viewing my work + contact form
+**View My Work**
 
 </td>
 </tr>
 </table>
 
-**GitHub doesn't notify me when someone wants to collaborate via my profile.**  
-**Please use the contact methods above to reach out!**
-
 </div>
-
-<br />
-
----
-
-<div align="center">
-
-### Let's Build Something Amazing Together
-
-**Available for immediate collaboration on exciting projects**
-
-[![Schedule a Call](https://img.shields.io/badge/Schedule-A%20Call-8B5CF6?style=for-the-badge&logo=googlecalendar&logoColor=white)](mailto:imranshiundu@gmail.com)
-[![View Resume](https://img.shields.io/badge/View-Resume-0A66C2?style=for-the-badge&logo=readme&logoColor=white)](https://imranisdev.top)
-[![Send Message](https://img.shields.io/badge/Send-Message-success?style=for-the-badge&logo=messenger&logoColor=white)](mailto:imranshiundu@gmail.com)
 
 <br />
 
@@ -356,18 +339,12 @@ Best for: Viewing my work + contact form
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=imranshiundu&color=8B5CF6&style=for-the-badge&label=Profile+Views)
 
-</div>
+<br /><br />
 
-<br />
-
-<div align="center">
 <details>
 <summary><b>Search Keywords (SEO)</b></summary>
 <br />
 Full Stack Developer • Java Developer • Spring Boot Expert • Next.js Developer • React Developer • TypeScript • Supabase • Software Engineer • Startup Founder • Technical Consultant • Microservices Architecture • API Development • Frontend Developer • Backend Developer • Remote Developer • Kenya Developer • African Tech • Open Source Contributor • Available for Hire • Software Architect • Cloud Computing • AWS • Docker • PostgreSQL • Web Development • Mobile Development • UI/UX • Tailwind CSS • Modern Web Applications • SaaS Development • Enterprise Applications
 </details>
-</div>
-
-
 
 </div>

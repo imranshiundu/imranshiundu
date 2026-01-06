@@ -337,9 +337,21 @@ Best for: Viewing my work + contact form
   <a href="#imran-shiundu">Back to Top ⬆️</a>
 </div>
 
-</div>
+<br />
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=imranshiundu&color=8B5CF6&style=for-the-badge&label=Profile+Views)
+
+</div>
+
+<br />
+
+<div align="center">
+<details>
+<summary><b>Search Keywords (SEO)</b></summary>
+<br />
+Full Stack Developer • Java Developer • Spring Boot Expert • Next.js Developer • React Developer • TypeScript • Supabase • Software Engineer • Startup Founder • Technical Consultant • Microservices Architecture • API Development • Frontend Developer • Backend Developer • Remote Developer • Kenya Developer • African Tech • Open Source Contributor • Available for Hire • Software Architect • Cloud Computing • AWS • Docker • PostgreSQL • Web Development • Mobile Development • UI/UX • Tailwind CSS • Modern Web Applications • SaaS Development • Enterprise Applications
+</details>
+</div>
 
 ---
 

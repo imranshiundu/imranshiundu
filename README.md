@@ -193,13 +193,11 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&icon_color=9F7AEA&text_color=E9D5FF&ring_color=8B5CF6" alt="GitHub Stats" />
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&icon_color=9F7AEA&text_color=E9D5FF)
 
-<img width="49%" src="https://streak-stats.demolab.com/?user=imranshiundu&theme=radical&hide_border=true&background=0D1117&ring=B794F4&fire=9F7AEA&currStreakLabel=E9D5FF&sideLabels=B794F4&currStreakNum=E9D5FF" alt="GitHub Streak" />
+![GitHub Streak](https://streak-stats.demolab.com?user=imranshiundu&theme=radical&hide_border=true&background=0D1117&ring=B794F4&fire=9F7AEA&currStreakLabel=E9D5FF)
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&text_color=E9D5FF" alt="Top Languages" />
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/wakatime?username=imranshiundu&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&text_color=E9D5FF&layout=compact" alt="Coding Activity" />
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&text_color=E9D5FF)
 
 </div>
 

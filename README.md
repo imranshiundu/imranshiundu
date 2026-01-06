@@ -353,8 +353,6 @@ Full Stack Developer • Java Developer • Spring Boot Expert • Next.js Devel
 </details>
 </div>
 
----
 
-**Keywords**: Full Stack Developer • Java Developer • Spring Boot Expert • Next.js Developer • React Developer • TypeScript • Supabase • Software Engineer • Startup Founder • Technical Consultant • Microservices Architecture • API Development • Frontend Developer • Backend Developer • Remote Developer • Kenya Developer • African Tech • Open Source Contributor • Available for Hire • Software Architect • Cloud Computing • AWS • Docker • PostgreSQL • Web Development • Mobile Development • UI/UX • Tailwind CSS • Modern Web Applications • SaaS Development • Enterprise Applications
 
 </div>

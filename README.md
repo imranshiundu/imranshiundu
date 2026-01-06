@@ -50,9 +50,9 @@ const imran = {
 
 <div align="center">
 
-[![Open to Work](https://img.shields.io/badge/Status-Open%20to%20Work-success?style=for-the-badge&logo=checkmarq&logoColor=white)](mailto:imranshiundu@gmail.com)
-[![Hire Me](https://img.shields.io/badge/Available%20for-Hire-8B5CF6?style=for-the-badge&logo=handshake&logoColor=white)](https://imranisdev.top)
-[![Collaborate](https://img.shields.io/badge/Open%20to-Collaborations-0A66C2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu)
+[![Open to Work](https://img.shields.io/badge/Status-Open%20to%20Work-B794F4?style=for-the-badge&logo=checkmarq&logoColor=white)](mailto:imranshiundu@gmail.com)
+[![Hire Me](https://img.shields.io/badge/Available%20for-Hire-9F7AEA?style=for-the-badge&logo=handshake&logoColor=white)](https://imranisdev.top)
+[![Collaborate](https://img.shields.io/badge/Open%20to-Collaborations-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu)
 
 </div>
 
@@ -193,13 +193,13 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=8B5CF6&icon_color=8B5CF6&text_color=C9D1D9" alt="GitHub Stats" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&icon_color=9F7AEA&text_color=E9D5FF&ring_color=8B5CF6" alt="GitHub Stats" />
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=imranshiundu&theme=tokyonight&hide_border=true&background=0D1117&ring=8B5CF6&fire=8B5CF6&currStreakLabel=8B5CF6" alt="GitHub Streak" />
+<img width="49%" src="https://streak-stats.demolab.com/?user=imranshiundu&theme=radical&hide_border=true&background=0D1117&ring=B794F4&fire=9F7AEA&currStreakLabel=E9D5FF&sideLabels=B794F4&currStreakNum=E9D5FF" alt="GitHub Streak" />
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=C9D1D9" alt="Top Languages" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&text_color=E9D5FF" alt="Top Languages" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imranshiundu&theme=tokyonight&utcOffset=3" alt="Productive Time" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/wakatime?username=imranshiundu&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&text_color=E9D5FF&layout=compact" alt="Coding Activity" />
 
 </div>
 
@@ -209,7 +209,7 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=8B5CF6&line=8B5CF6&point=C9D1D9&area=true&area_color=8B5CF6" alt="Contribution Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" alt="Contribution Graph" />
 
 </div>
 
@@ -246,6 +246,53 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 > **"The best code is code that doesn't need to be written. The second best is code that's so simple it obviously has no deficiencies."**
 > 
 > Building with intention, scaling with precision.
+
+</div>
+
+<br />
+
+## How to Reach Me for Collaboration
+
+<div align="center">
+
+**I respond to collaboration requests within 24 hours!**
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+### Email (Fastest)
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:imranshiundu@gmail.com)
+
+**imranshiundu@gmail.com**
+
+Best for: Project proposals, partnerships, consulting inquiries
+
+</td>
+<td align="center" width="33%">
+
+### LinkedIn
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imranshiundu)
+
+Best for: Professional networking, job opportunities
+
+</td>
+<td align="center" width="33%">
+
+### Portfolio Contact
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
+
+Best for: Viewing my work + contact form
+
+</td>
+</tr>
+</table>
+
+**GitHub doesn't notify me when someone wants to collaborate via my profile.**  
+**Please use the contact methods above to reach out!**
 
 </div>
 

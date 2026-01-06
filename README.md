@@ -193,11 +193,21 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&icon_color=9F7AEA&text_color=E9D5FF)
+<img src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 
-![GitHub Streak](https://streak-stats.demolab.com?user=imranshiundu&theme=radical&hide_border=true&background=0D1117&ring=B794F4&fire=9F7AEA&currStreakLabel=E9D5FF)
+<img src="https://streak-stats.demolab.com?user=imranshiundu&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=B794F4&text_color=E9D5FF)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+
+</div>
+
+<br />
+
+## 3D Contribution Graph
+
+<div align="center">
+
+<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
 
 </div>
 

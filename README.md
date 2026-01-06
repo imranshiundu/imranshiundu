@@ -328,6 +328,17 @@ Best for: Viewing my work + contact form
 
 <br />
 
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?section=footer&type=waving&color=8B5CF6&height=120&section=footer" width="100%" />
+
+<div align="center">
+  <b>© 2026 Imran Shiundu • Built with ❤️ & Code</b><br />
+  <a href="#imran-shiundu">Back to Top ⬆️</a>
+</div>
+
+</div>
+
 ![Visitor Count](https://komarev.com/ghpvc/?username=imranshiundu&color=8B5CF6&style=for-the-badge&label=Profile+Views)
 
 ---

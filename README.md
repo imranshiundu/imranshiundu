@@ -259,6 +259,14 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
+<div align="center">
+
+![Random Joke](https://readme-jokes.vercel.app/api?theme=tokyonight&hide_border=true)
+
+</div>
+
+<br />
+
 ## How to Reach Me for Collaboration
 
 <div align="center">

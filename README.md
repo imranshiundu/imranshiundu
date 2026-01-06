@@ -255,6 +255,14 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
+### Quick Collaboration Request
+
+[![Open Collaboration Request](https://img.shields.io/badge/🤝_Submit_Collaboration_Request-B794F4?style=for-the-badge)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
+
+**Click above and I'll get an email notification within minutes!**
+
+---
+
 **I respond to collaboration requests within 24 hours!**
 
 <table>

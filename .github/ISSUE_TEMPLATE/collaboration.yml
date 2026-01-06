@@ -1,0 +1,76 @@
+name: 🤝 Collaboration Request
+description: Want to collaborate on a project? Let's connect!
+title: "[COLLABORATION] "
+labels: ["collaboration", "partnership"]
+assignees:
+  - imranshiundu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for reaching out!
+        I respond to all collaboration requests within 24 hours. Please fill out the details below.
+        
+  - type: input
+    id: name
+    attributes:
+      label: Your Name
+      description: What should I call you?
+      placeholder: e.g., John Doe
+    validations:
+      required: true
+      
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: Best email to reach you
+      placeholder: e.g., john@example.com
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: collaboration-type
+    attributes:
+      label: Type of Collaboration
+      description: What kind of collaboration are you interested in?
+      options:
+        - Open Source Project
+        - Startup Co-founding
+        - Contract/Freelance Work
+        - Full-time Opportunity
+        - Technical Consulting
+        - Mentorship
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: project-details
+    attributes:
+      label: Project/Opportunity Details
+      description: Tell me about what you're working on or the opportunity
+      placeholder: Brief description of the project, tech stack, timeline, etc.
+    validations:
+      required: true
+      
+  - type: textarea
+    id: role
+    attributes:
+      label: What role would I play?
+      description: What specifically would you need from me?
+      placeholder: e.g., Backend developer, Technical advisor, Co-founder, etc.
+      
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline
+      description: When would this start? How long would it last?
+      placeholder: e.g., Starting in 2 weeks, 3-month project
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Anything else I should know?
+      placeholder: Budget, team size, tech stack requirements, etc.

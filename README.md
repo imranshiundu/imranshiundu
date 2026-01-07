@@ -278,10 +278,6 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <div align="center">
 
-## How to Reach Me for Collaboration
-
-<div align="center">
-
 ### Quick Collaboration Request
 
 [![Open Collaboration Request](https://img.shields.io/badge/🤝_Submit_Collaboration_Request-B794F4?style=for-the-badge)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
@@ -321,6 +317,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 </td>
 </tr>
 </table>
+
+**GitHub doesn't notify me when someone wants to collaborate via my profile.**  
+**Please use the contact methods above to reach out!**
 
 </div>
 

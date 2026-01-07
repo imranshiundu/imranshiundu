@@ -18,6 +18,16 @@
 
 <br />
 
+<div align="center">
+  <a href="#about-me">👨‍💻 About Me</a> •
+  <a href="#featured-projects">🚀 Projects</a> •
+  <a href="#github-statistics">📊 Stats</a> •
+  <a href="#tech-stack">🛠️ Tech Stack</a> •
+  <a href="#how-to-reach-me-for-collaboration">📫 Contact</a>
+</div>
+
+<br />
+
 ## About Me
 
 ```javascript

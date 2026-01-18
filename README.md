@@ -19,16 +19,18 @@
 <br />
 
 <div align="center">
-  <a href="#about-me">👨‍💻 About Me</a> •
-  <a href="#featured-projects">🚀 Projects</a> •
-  <a href="#github-statistics">📊 Stats</a> •
-  <a href="#tech-stack">🛠️ Tech Stack</a> •
-  <a href="#how-to-reach-me-for-collaboration">📫 Contact</a>
+  <a href="#about-me"><img src="https://img.shields.io/badge/About%20Me-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="About Me" /></a>
+  <a href="#featured-projects"><img src="https://img.shields.io/badge/Projects-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Projects" /></a>
+  <a href="#github-statistics"><img src="https://img.shields.io/badge/Stats-8B5CF6?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Stats" /></a>
+  <a href="#tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-8B5CF6?style=for-the-badge&logo=stackshare&logoColor=white" alt="Tech Stack" /></a>
+  <a href="#how-to-reach-me-for-collaboration"><img src="https://img.shields.io/badge/Contact-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact" /></a>
 </div>
 
 <br />
 
-## About Me
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=About%20Me&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="About Me" />
+</div>
 
 ```javascript
 const imran = {
@@ -56,7 +58,9 @@ const imran = {
 
 <br />
 
-## Open to Opportunities
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Open%20to%20Opportunities&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Open to Opportunities" />
+</div>
 
 <div align="center">
 
@@ -104,7 +108,9 @@ Open source projects, startup co-founding, and technical mentorship
 
 <br />
 
-## Featured Projects
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Featured%20Projects&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Featured Projects" />
+</div>
 
 <table>
 <tr>
@@ -116,8 +122,13 @@ Open source projects, startup co-founding, and technical mentorship
 > "You focus on the idea, we'll handle the execution."
 
 [![Visit Orb21](https://img.shields.io/badge/Visit-Orb21.com-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)](https://orb21.com)
-
-Fast-track your startup from concept to launch with a team dedicated to turning your vision into reality.
+ 
+ ```yaml
+ Stack: Java, Spring Boot, Next.js
+ Features: Microservices, Startup Execution
+ ```
+ 
+ Fast-track your startup from concept to launch with a team dedicated to turning your vision into reality.
 
 </td>
 <td width="50%" valign="top">
@@ -140,7 +151,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## Core Competencies
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Core%20Competencies&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Core Competencies" />
+</div>
 
 <table>
 <tr>
@@ -189,7 +202,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## Tech Stack
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Tech%20Stack&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Tech Stack" />
+</div>
 
 <div align="center">
   <a href="https://skillicons.dev">
@@ -199,7 +214,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## GitHub Statistics
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=GitHub%20Statistics&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="GitHub Statistics" />
+</div>
 
 <div align="center">
 
@@ -213,7 +230,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## 3D Contribution Graph
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=3D%20Contribution%20Graph&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="3D Contribution Graph" />
+</div>
 
 <div align="center">
 
@@ -223,7 +242,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## Contribution Activity
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Contribution%20Activity&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Contribution Activity" />
+</div>
 
 <div align="center">
 
@@ -233,7 +254,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## Snake Eating My Contributions
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=The%20Snake&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Snake Eating My Contributions" />
+</div>
 
 <div align="center">
 
@@ -247,7 +270,9 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## Achievements
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Achievements&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Achievements" />
+</div>
 
 <div align="center">
 
@@ -257,14 +282,18 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## Latest Blog Posts
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Latest%20Blog%20Posts&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Latest Blog Posts" />
+</div>
 
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
 <br />
 
-## Philosophy
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Philosophy&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Philosophy" />
+</div>
 
 <div align="center">
 
@@ -284,13 +313,15 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 
 <br />
 
-## How to Reach Me for Collaboration
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Contact%20Me&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="How to Reach Me for Collaboration" />
+</div>
 
 <div align="center">
 
 ### Quick Collaboration Request
 
-[![Open Collaboration Request](https://img.shields.io/badge/🤝_Submit_Collaboration_Request-B794F4?style=for-the-badge)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
+[![Open Collaboration Request](https://img.shields.io/badge/Submit_Collaboration_Request-B794F4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
 
 **Click above and I'll get an email notification within minutes!**
 
@@ -340,8 +371,8 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 <img src="https://capsule-render.vercel.app/api?section=footer&type=waving&color=8B5CF6&height=120&section=footer" width="100%" />
 
 <div align="center">
-  <b>© 2026 Imran Shiundu • Built with ❤️ & Code</b><br />
-  <a href="#imran-shiundu">Back to Top ⬆️</a>
+  <b>© 2026 Imran Shiundu • Built with Code</b><br />
+  <a href="#imran-shiundu"><img src="https://img.shields.io/badge/Back%20To%20Top-181717?style=flat&logo=arrow-up&logoColor=white" alt="Back to Top" /></a>
 </div>
 
 <br />

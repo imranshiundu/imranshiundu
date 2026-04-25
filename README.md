@@ -38,7 +38,7 @@
 <td align="center"><b>🔥 This Week</b><br/><b>0 commits</b></td>
 </tr></table>
 
-**Currently active on:** mamahoney, tinyurl, github-triager
+**Currently active on:** Griot AI, Pickup, Griot-Trading-System, Makuzi
 
 
 **📬 Recent commits:**

@@ -86,10 +86,6 @@ async function getPublicSignal() {
 
     const activeRepos = [...new Set(pushEvents.map(e => e.repo.name.replace(`${username}/`, "")))].slice(0, 6);
 
-    // Weekly commit density
-    const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
-    const weeklyCommits = recentCommits.filter(c => new Date(c.date).getTime() > oneWeekAgo).length;
-
     return {
       publicRepos: user.public_repos,
       followers:   user.followers,
@@ -98,7 +94,6 @@ async function getPublicSignal() {
       recentCommits,
       recentPushesText,
       activeRepos,
-      weeklyCommits,
       latestRepoNames: ownRepos.slice(0, 6).map(r => `${r.name}${r.language ? ` (${r.language})` : ""}`).join(", ")
     };
   } catch (err) {
@@ -106,7 +101,7 @@ async function getPublicSignal() {
     return {
       publicRepos: "—", followers: "—", totalStars: "—", topLangs: "—",
       recentCommits: [], recentPushesText: "- API unavailable",
-      activeRepos: [], weeklyCommits: 0, latestRepoNames: ""
+      activeRepos: [], latestRepoNames: ""
     };
   }
 }
@@ -145,12 +140,12 @@ async function groqComplete(systemPrompt, userPrompt, maxTokens = 120, temperatu
 // One punchy line summarising Imran's current velocity. Shows up at top of profile.
 
 async function getAiSnapshot(signal) {
-  const fallback = `> Shipping daily — ${signal.publicRepos} public repos · ${signal.totalStars} ⭐ total · ${signal.weeklyCommits} commits this week.`;
+  const fallback = `> Shipping daily — ${signal.publicRepos} public repos · ${signal.totalStars} ⭐ total.`;
 
   const result = await groqComplete(
     "You write brutally honest, non-hype GitHub profile status lines. One sentence. Max 30 words. No emojis. No quotes. Present tense.",
     `Developer: Imran Shiundu — full-stack engineer + AI systems builder from Kenya.
-Public repos: ${signal.publicRepos}. Stars: ${signal.totalStars}. Weekly commits: ${signal.weeklyCommits}.
+Public repos: ${signal.publicRepos}. Stars: ${signal.totalStars}.
 Active repos this week: ${signal.activeRepos.slice(0, 4).join(", ")}.
 Recent commits: ${signal.recentCommits.slice(0, 4).map(c => c.message).join(" | ")}.
 Write one status line about what this developer is currently doing and shipping.`
@@ -183,48 +178,18 @@ async function getAiCurrentFocus(signal) {
     : fallback;
 }
 
-// ─── AI: Weekly Insight ───────────────────────────────────────────────────────
-// A brief technical insight or observation about the week's work pattern.
-
-async function getAiWeeklyInsight(signal) {
-  if (!groqKey || signal.recentCommits.length === 0) return null;
-
-  const commitsByRepo = {};
-  signal.recentCommits.forEach(c => {
-    commitsByRepo[c.repo] = (commitsByRepo[c.repo] || 0) + 1;
-  });
-
-  const repoBreakdown = Object.entries(commitsByRepo)
-    .sort((a, b) => b[1] - a[1])
-    .map(([repo, count]) => `${repo}: ${count} commit${count > 1 ? "s" : ""}`)
-    .join(", ");
-
-  const result = await groqComplete(
-    "You write brief, honest, technical observations about a developer's work pattern. 1 sentence. Max 20 words. No emojis. Factual and specific.",
-    `This week's commit distribution: ${repoBreakdown}. Weekly total: ${signal.weeklyCommits} commits.
-Write one factual observation about this work pattern (e.g. which area is most active, or the spread of effort).`,
-    60, 0.35
-  );
-
-  return result || null;
-}
-
 // ─── Render: GitHub Signal Block ─────────────────────────────────────────────
 
 async function renderGithubSignal(signal) {
   const now = new Date().toUTCString();
 
-  const [currentFocus, weeklyInsight] = await Promise.all([
-    getAiCurrentFocus(signal),
-    getAiWeeklyInsight(signal)
-  ]);
+  const currentFocus = await getAiCurrentFocus(signal);
 
   const statsRow = [
     `<td align="center"><b>📦 Public Repos</b><br/><b>${signal.publicRepos}</b></td>`,
     `<td align="center"><b>👥 Followers</b><br/><b>${signal.followers}</b></td>`,
     `<td align="center"><b>⭐ Total Stars</b><br/><b>${signal.totalStars}</b></td>`,
-    `<td align="center"><b>🔤 Top Languages</b><br/>${signal.topLangs}</td>`,
-    `<td align="center"><b>🔥 This Week</b><br/><b>${signal.weeklyCommits} commits</b></td>`
+    `<td align="center"><b>🔤 Top Languages</b><br/>${signal.topLangs}</td>`
   ].join("\n");
 
   const lines = [
@@ -233,7 +198,6 @@ async function renderGithubSignal(signal) {
     `</tr></table>`,
     ``,
     currentFocus,
-    weeklyInsight ? `\n*${weeklyInsight}*` : "",
     ``,
     `**📬 Recent commits:**`,
     signal.recentPushesText,
@@ -297,7 +261,7 @@ async function main() {
     getPublicSignal()
   ]);
 
-  console.log(`Signal: ${signal.publicRepos} repos · ${signal.followers} followers · ${signal.totalStars} stars · ${signal.weeklyCommits} commits/week`);
+  console.log(`Signal: ${signal.publicRepos} repos · ${signal.followers} followers · ${signal.totalStars} stars`);
   console.log("Running AI generation...");
 
   const [aiSnapshot, githubSignal, codingSystem] = await Promise.all([
@@ -322,4 +286,3 @@ async function main() {
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
-

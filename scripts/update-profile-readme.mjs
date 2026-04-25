@@ -1,187 +1,262 @@
 import fs from "node:fs/promises";
 
-const username = process.env.GITHUB_USERNAME || "imranshiundu";
+const username   = process.env.GITHUB_USERNAME || "imranshiundu";
 const githubToken = process.env.GITHUB_TOKEN || "";
-const groqKey = process.env.GROQ_API_KEY || "";
-const groqModel = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const groqKey    = process.env.GROQ_API_KEY || "";
+const groqModel  = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
 
-const readmePath = new URL("../README.md", import.meta.url);
-const projectsPath = new URL("../data/projects.json", import.meta.url);
+const readmePath      = new URL("../README.md",              import.meta.url);
+const projectsPath    = new URL("../data/projects.json",     import.meta.url);
 const codingSystemPath = new URL("../docs/CODING_SYSTEM.md", import.meta.url);
 
-async function fetchWithTimeout(url, options = {}, timeoutMs = 12000) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+// ─── Utilities ───────────────────────────────────────────────────────────────
+
+async function fetchWithTimeout(url, options = {}, timeoutMs = 14000) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
-    return await fetch(url, { ...options, signal: controller.signal });
+    return await fetch(url, { ...options, signal: ctrl.signal });
   } finally {
-    clearTimeout(timeout);
+    clearTimeout(t);
   }
 }
 
 function replaceBlock(source, name, replacement) {
-  const start = `<!-- ${name}:START -->`;
-  const end = `<!-- ${name}:END -->`;
-  const pattern = new RegExp(`${escapeRegExp(start)}[\\s\\S]*?${escapeRegExp(end)}`);
-  if (!pattern.test(source)) {
-    throw new Error(`Missing block markers for ${name}. Expected ${start} and ${end}.`);
-  }
+  const start   = `<!-- ${name}:START -->`;
+  const end     = `<!-- ${name}:END -->`;
+  const pattern = new RegExp(`${esc(start)}[\\s\\S]*?${esc(end)}`);
+  if (!pattern.test(source)) throw new Error(`Missing markers for ${name}`);
   return source.replace(pattern, `${start}\n${replacement.trim()}\n${end}`);
 }
 
-function escapeRegExp(value) {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
+function esc(v) { return v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+
+// ─── GitHub API ───────────────────────────────────────────────────────────────
 
 async function githubFetch(path) {
-  const response = await fetchWithTimeout(`https://api.github.com${path}`, {
+  const res = await fetchWithTimeout(`https://api.github.com${path}`, {
     headers: {
-      "Accept": "application/vnd.github+json",
-      "User-Agent": `${username}-profile-readme-bot`,
+      "Accept":     "application/vnd.github+json",
+      "User-Agent": `${username}-profile-bot`,
       ...(githubToken ? { "Authorization": `Bearer ${githubToken}` } : {})
     }
   });
-
-  if (!response.ok) {
-    throw new Error(`GitHub API error ${response.status} for ${path}: ${await response.text()}`);
-  }
-
-  return response.json();
+  if (!res.ok) throw new Error(`GitHub ${res.status}: ${path}`);
+  return res.json();
 }
 
 async function getPublicSignal() {
   try {
     const [user, repos, events] = await Promise.all([
       githubFetch(`/users/${username}`),
-      githubFetch(`/users/${username}/repos?sort=updated&per_page=100`),
-      githubFetch(`/users/${username}/events/public?per_page=30`)
+      githubFetch(`/users/${username}/repos?sort=updated&per_page=100&type=public`),
+      githubFetch(`/users/${username}/events/public?per_page=50`)
     ]);
 
-    const ownRepos = repos.filter((r) => !r.fork);
+    const ownRepos   = repos.filter(r => !r.fork && !r.private);
+    const totalStars = ownRepos.reduce((s, r) => s + (r.stargazers_count || 0), 0);
 
-    const totalStars = ownRepos.reduce((sum, r) => sum + (r.stargazers_count || 0), 0);
-
-    const topRepos = ownRepos
-      .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
-      .slice(0, 5)
-      .map((r) => `- **${r.name}**${r.language ? ` \`${r.language}\`` : ""}${r.stargazers_count ? ` ⭐ ${r.stargazers_count}` : ""}`)
-      .join("\n");
-
-    const recentPushes = events
-      .filter((e) => e.type === "PushEvent")
-      .slice(0, 3)
-      .map((e) => {
-        const repo = e.repo?.name?.replace(`${username}/`, "") || "unknown";
-        const msg = e.payload?.commits?.[0]?.message?.split("\n")[0] || "pushed";
-        return `- \`${repo}\`: ${msg}`;
-      })
-      .join("\n");
-
+    // Top languages by repo count
     const langMap = {};
-    ownRepos.forEach((r) => {
-      if (r.language) langMap[r.language] = (langMap[r.language] || 0) + 1;
-    });
+    ownRepos.forEach(r => { if (r.language) langMap[r.language] = (langMap[r.language] || 0) + 1; });
     const topLangs = Object.entries(langMap)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 5)
-      .map(([lang, count]) => `\`${lang}\` ×${count}`)
-      .join("  ");
+      .sort((a, b) => b[1] - a[1]).slice(0, 5)
+      .map(([l]) => `\`${l}\``).join(" · ");
+
+    // Recent meaningful pushes — own repos, exclude profile repo, exclude bot/merge commits
+    const pushEvents = events.filter(e =>
+      e.type === "PushEvent" &&
+      e.repo?.name?.startsWith(`${username}/`) &&
+      e.repo?.name !== `${username}/${username}`
+    );
+
+    const recentCommits = pushEvents
+      .flatMap(e => {
+        const repo = e.repo.name.replace(`${username}/`, "");
+        return (e.payload?.commits || [])
+          .filter(c => c.message && !c.message.startsWith("Merge") && !c.message.includes("[skip ci]") && !c.message.includes("generated"))
+          .map(c => ({ repo, message: c.message.split("\n")[0], date: e.created_at }));
+      })
+      .slice(0, 8);
+
+    const recentPushesText = recentCommits.slice(0, 4)
+      .map(c => `- \`${c.repo}\` — ${c.message}`)
+      .join("\n") || "- No recent public commits found";
+
+    const activeRepos = [...new Set(pushEvents.map(e => e.repo.name.replace(`${username}/`, "")))].slice(0, 6);
+
+    // Weekly commit density
+    const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    const weeklyCommits = recentCommits.filter(c => new Date(c.date).getTime() > oneWeekAgo).length;
 
     return {
       publicRepos: user.public_repos,
-      followers: user.followers,
-      following: user.following,
+      followers:   user.followers,
       totalStars,
       topLangs,
-      topRepos: topRepos || "- No public repositories found",
-      recentPushes: recentPushes || "- No recent pushes",
-      latestRepos: topRepos || "- GitHub API unavailable during this run"
+      recentCommits,
+      recentPushesText,
+      activeRepos,
+      weeklyCommits,
+      latestRepoNames: ownRepos.slice(0, 6).map(r => `${r.name}${r.language ? ` (${r.language})` : ""}`).join(", ")
     };
-  } catch (error) {
-    console.warn(error.message);
+  } catch (err) {
+    console.warn("GitHub signal failed:", err.message);
     return {
-      publicRepos: "unknown",
-      followers: "unknown",
-      following: "unknown",
-      totalStars: "unknown",
-      topLangs: "",
-      topRepos: "- GitHub API unavailable during this run",
-      recentPushes: "- GitHub API unavailable during this run",
-      latestRepos: "- GitHub API unavailable during this run"
+      publicRepos: "—", followers: "—", totalStars: "—", topLangs: "—",
+      recentCommits: [], recentPushesText: "- API unavailable",
+      activeRepos: [], weeklyCommits: 0, latestRepoNames: ""
     };
   }
 }
 
-function renderGithubSignal(signal) {
-  const now = new Date().toUTCString();
-  if (signal.publicRepos === "unknown") {
-    return `> ⚠️ GitHub API was unavailable during this run. Stats will update on the next refresh.\n\n*Last attempted: ${now}*`;
-  }
+// ─── Groq AI Engine ───────────────────────────────────────────────────────────
 
-  return [
-    `<table>`,
-    `<tr>`,
-    `<td align="center"><b>📦 Public Repos</b><br/><b>${signal.publicRepos}</b></td>`,
-    `<td align="center"><b>👥 Followers</b><br/><b>${signal.followers}</b></td>`,
-    `<td align="center"><b>⭐ Total Stars</b><br/><b>${signal.totalStars}</b></td>`,
-    `<td align="center"><b>🔤 Top Languages</b><br/>${signal.topLangs}</td>`,
-    `</tr>`,
-    `</table>`,
-    ``,
-    `**🏆 Most starred repos:**`,
-    signal.topRepos,
-    ``,
-    `**📬 Recent pushes:**`,
-    signal.recentPushes,
-    ``,
-    `<sub>Auto-refreshed by GitHub Actions · ${now}</sub>`
-  ].join("\n");
-}
-
-async function getAiSnapshot(signal) {
-  const repoPhrase = signal.publicRepos === "unknown" ? "" : ` ${signal.publicRepos} public repos, ${signal.totalStars} total stars.`;
-  const fallback = `> Current operating mode: ship one real improvement today.${repoPhrase} Keep the commit meaningful, small, and reviewable.`;
-
-  if (!groqKey) return fallback;
-
-  const prompt = `Write one short professional GitHub profile status for Imran Shiundu. Make it honest, motivating, and non-hype. Mention daily shipping and useful systems. Max 32 words. No emojis. Latest public signal:\n${signal.latestRepos}`;
-
+async function groqComplete(systemPrompt, userPrompt, maxTokens = 120, temperature = 0.4) {
+  if (!groqKey) return null;
   try {
-    const response = await fetchWithTimeout("https://api.groq.com/openai/v1/chat/completions", {
+    const res = await fetchWithTimeout("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${groqKey}`,
-        "Content-Type": "application/json"
+        "Content-Type":  "application/json"
       },
       body: JSON.stringify({
         model: groqModel,
         messages: [
-          { role: "system", content: "You write concise, serious GitHub README status lines." },
-          { role: "user", content: prompt }
+          { role: "system", content: systemPrompt },
+          { role: "user",   content: userPrompt   }
         ],
-        temperature: 0.35,
-        max_tokens: 90
+        temperature,
+        max_tokens: maxTokens
       })
     });
-
-    if (!response.ok) throw new Error(await response.text());
-    const data = await response.json();
-    const text = data?.choices?.[0]?.message?.content?.trim();
-    if (!text) return fallback;
-    return `> ${text.replace(/^>\s*/, "")}`;
-  } catch (error) {
-    console.warn(`Groq snapshot skipped: ${error.message}`);
-    return fallback;
+    if (!res.ok) throw new Error(await res.text());
+    const data = await res.json();
+    return data?.choices?.[0]?.message?.content?.trim() || null;
+  } catch (err) {
+    console.warn("Groq call failed:", err.message);
+    return null;
   }
 }
 
-function renderProjectCards(projects) {
-  const cells = projects.map((project) => {
-    const tags = project.tags.map((tag) => `\`${tag}\``).join(" ");
-    const link = project.url ? `\n\n[Open project](${project.url})` : "";
-    return `<td width="50%" valign="top">\n\n### ${project.name}\n${project.description}\n\n${tags}${link}\n\n</td>`;
+// ─── AI: Daily Status Snapshot ────────────────────────────────────────────────
+// One punchy line summarising Imran's current velocity. Shows up at top of profile.
+
+async function getAiSnapshot(signal) {
+  const fallback = `> Shipping daily — ${signal.publicRepos} public repos · ${signal.totalStars} ⭐ total · ${signal.weeklyCommits} commits this week.`;
+
+  const result = await groqComplete(
+    "You write brutally honest, non-hype GitHub profile status lines. One sentence. Max 30 words. No emojis. No quotes. Present tense.",
+    `Developer: Imran Shiundu — full-stack engineer + AI systems builder from Kenya.
+Public repos: ${signal.publicRepos}. Stars: ${signal.totalStars}. Weekly commits: ${signal.weeklyCommits}.
+Active repos this week: ${signal.activeRepos.slice(0, 4).join(", ")}.
+Recent commits: ${signal.recentCommits.slice(0, 4).map(c => c.message).join(" | ")}.
+Write one status line about what this developer is currently doing and shipping.`
+  );
+
+  return result ? `> ${result.replace(/^>\s*/, "")}` : fallback;
+}
+
+// ─── AI: Current Focus ────────────────────────────────────────────────────────
+// Detects what Imran is actually working on right now from commit patterns.
+
+async function getAiCurrentFocus(signal) {
+  const fallback = signal.activeRepos.length > 0
+    ? `**Currently active on:** ${signal.activeRepos.slice(0, 3).join(", ")}`
+    : "**Currently active:** building in private.";
+
+  if (signal.recentCommits.length === 0) return fallback;
+
+  const commitSummary = signal.recentCommits.slice(0, 6)
+    .map(c => `[${c.repo}] ${c.message}`).join("\n");
+
+  const result = await groqComplete(
+    "You analyze developer commit history and write a factual, specific 1-sentence focus statement. Max 25 words. No hype. No emojis. Start with a verb (e.g. Building, Shipping, Refactoring, Designing, Integrating).",
+    `Commits from the last few days:\n${commitSummary}\n\nWhat is this developer currently focused on building or fixing? Be specific about the domain or technology.`,
+    80, 0.3
+  );
+
+  return result
+    ? `**Current focus:** ${result.replace(/^(Building|Shipping|Refactoring|Designing|Integrating)\s/i, (m) => m)}`
+    : fallback;
+}
+
+// ─── AI: Weekly Insight ───────────────────────────────────────────────────────
+// A brief technical insight or observation about the week's work pattern.
+
+async function getAiWeeklyInsight(signal) {
+  if (!groqKey || signal.recentCommits.length === 0) return null;
+
+  const commitsByRepo = {};
+  signal.recentCommits.forEach(c => {
+    commitsByRepo[c.repo] = (commitsByRepo[c.repo] || 0) + 1;
   });
 
+  const repoBreakdown = Object.entries(commitsByRepo)
+    .sort((a, b) => b[1] - a[1])
+    .map(([repo, count]) => `${repo}: ${count} commit${count > 1 ? "s" : ""}`)
+    .join(", ");
+
+  const result = await groqComplete(
+    "You write brief, honest, technical observations about a developer's work pattern. 1 sentence. Max 20 words. No emojis. Factual and specific.",
+    `This week's commit distribution: ${repoBreakdown}. Weekly total: ${signal.weeklyCommits} commits.
+Write one factual observation about this work pattern (e.g. which area is most active, or the spread of effort).`,
+    60, 0.35
+  );
+
+  return result || null;
+}
+
+// ─── Render: GitHub Signal Block ─────────────────────────────────────────────
+
+async function renderGithubSignal(signal) {
+  const now = new Date().toUTCString();
+
+  const [currentFocus, weeklyInsight] = await Promise.all([
+    getAiCurrentFocus(signal),
+    getAiWeeklyInsight(signal)
+  ]);
+
+  const statsRow = [
+    `<td align="center"><b>📦 Public Repos</b><br/><b>${signal.publicRepos}</b></td>`,
+    `<td align="center"><b>👥 Followers</b><br/><b>${signal.followers}</b></td>`,
+    `<td align="center"><b>⭐ Total Stars</b><br/><b>${signal.totalStars}</b></td>`,
+    `<td align="center"><b>🔤 Top Languages</b><br/>${signal.topLangs}</td>`,
+    `<td align="center"><b>🔥 This Week</b><br/><b>${signal.weeklyCommits} commits</b></td>`
+  ].join("\n");
+
+  const lines = [
+    `<table><tr>`,
+    statsRow,
+    `</tr></table>`,
+    ``,
+    currentFocus,
+    weeklyInsight ? `\n*${weeklyInsight}*` : "",
+    ``,
+    `**📬 Recent commits:**`,
+    signal.recentPushesText,
+    ``,
+    `<sub>Auto-refreshed by GitHub Actions · ${now}</sub>`
+  ].filter(l => l !== null);
+
+  return lines.join("\n");
+}
+
+// ─── Render: AI Snapshot ──────────────────────────────────────────────────────
+
+async function renderAiSnapshot(signal) {
+  return getAiSnapshot(signal);
+}
+
+// ─── Render: Projects ─────────────────────────────────────────────────────────
+
+function renderProjectCards(projects) {
+  const cells = projects.map(p => {
+    const tags = p.tags.map(t => `\`${t}\``).join(" ");
+    const link = p.url ? `\n\n[Open project](${p.url})` : "";
+    return `<td width="50%" valign="top">\n\n### ${p.name}\n${p.description}\n\n${tags}${link}\n\n</td>`;
+  });
   const rows = [];
   for (let i = 0; i < cells.length; i += 2) {
     rows.push(`<tr>\n${cells[i]}\n${cells[i + 1] || '<td width="50%" valign="top"></td>'}\n</tr>`);
@@ -189,51 +264,54 @@ function renderProjectCards(projects) {
   return `<table>\n${rows.join("\n")}\n</table>`;
 }
 
+// ─── Render: Coding System ────────────────────────────────────────────────────
+
 async function renderCodingSystem() {
   try {
     const raw = await fs.readFile(codingSystemPath, "utf8");
-    // Extract just "The rule" and "Daily workflow" sections for embedding
     const ruleMatch = raw.match(/## The rule\n\n([\s\S]*?)(?=\n##)/);
-    const dailyMatch = raw.match(/### 1\. Pick one task\n\n([\s\S]*?)(?=\n### 2)/);
     const antiMatch = raw.match(/## Anti-patterns\n\n([\s\S]*?)(?=\n##)/);
-
-    const rule = ruleMatch ? ruleMatch[1].trim() : "";
-    const daily = dailyMatch ? dailyMatch[1].trim() : "";
-    const anti = antiMatch ? antiMatch[1].trim() : "";
-
+    const rule = ruleMatch?.[1]?.trim() ?? "";
+    const anti = antiMatch?.[1]?.trim()
+      .split("\n").filter(l => l.startsWith("-")).slice(0, 3)
+      .map(l => l.replace(/^-\s*/, "")).join(" · ") ?? "";
     return [
-      rule ? `**The rule:** ${rule}` : "",
-      "",
-      daily ? `**Pick one task — small enough to finish today:**\n${daily}` : "",
-      "",
-      anti ? `**Avoid these anti-patterns:**\n${anti}` : "",
-      "",
-      `<sub>Source: [docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md)</sub>`
-    ].filter(Boolean).join("\n");
+      rule  ? `> ${rule}` : "",
+      anti  ? `\n**Avoid:** ${anti}` : "",
+      `\n→ [Full system: docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md)`
+    ].join("\n");
   } catch {
-    return `> See [docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md) for the full daily coding system.`;
+    return `→ [Full system: docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md)`;
   }
 }
 
+// ─── Main ─────────────────────────────────────────────────────────────────────
+
 async function main() {
-  const readme = await fs.readFile(readmePath, "utf8");
-  const projects = JSON.parse(await fs.readFile(projectsPath, "utf8"));
-  const signal = await getPublicSignal();
-  const aiSnapshot = await getAiSnapshot(signal);
-  const codingSystem = await renderCodingSystem();
+  console.log("Fetching GitHub signal...");
+  const [readme, projects, signal] = await Promise.all([
+    fs.readFile(readmePath, "utf8"),
+    fs.readFile(projectsPath, "utf8").then(JSON.parse),
+    getPublicSignal()
+  ]);
+
+  console.log(`Signal: ${signal.publicRepos} repos · ${signal.followers} followers · ${signal.totalStars} stars · ${signal.weeklyCommits} commits/week`);
+  console.log("Running AI generation...");
+
+  const [aiSnapshot, githubSignal, codingSystem] = await Promise.all([
+    renderAiSnapshot(signal),
+    renderGithubSignal(signal),
+    renderCodingSystem()
+  ]);
 
   let updated = readme;
-  updated = replaceBlock(updated, "PROJECTS", renderProjectCards(projects));
-  updated = replaceBlock(updated, "AI-SNAPSHOT", aiSnapshot);
-  updated = replaceBlock(updated, "GITHUB-SIGNAL", renderGithubSignal(signal));
+  updated = replaceBlock(updated, "PROJECTS",      renderProjectCards(projects));
+  updated = replaceBlock(updated, "AI-SNAPSHOT",   aiSnapshot);
+  updated = replaceBlock(updated, "GITHUB-SIGNAL", githubSignal);
   updated = replaceBlock(updated, "CODING-SYSTEM", codingSystem);
 
   await fs.writeFile(readmePath, updated, "utf8");
-  console.log("README generated blocks refreshed.");
-  console.log(`Signal: ${signal.publicRepos} repos · ${signal.followers} followers · ${signal.totalStars} stars`);
+  console.log("✓ README blocks refreshed successfully.");
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+main().catch(err => { console.error(err); process.exit(1); });

@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=8B5CF6&text=Imran%20Shiundu&fontColor=FFFFFF&fontSize=42&fontAlignY=36&desc=Full-stack%20builder%20%C2%B7%20systems%20thinker%20%C2%B7%20product%20executor&descAlignY=58&animation=fadeIn" width="100%" alt="Imran Shiundu profile banner" />
-
 <a href="https://orb21.com">
   <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=I+build+useful+systems%2C+not+just+repositories.;Backend+%2B+Frontend+%2B+Product+Thinking.;Java+%2F+Spring+Boot+%C2%B7+Next.js+%C2%B7+TypeScript.;Currently+shipping%2C+learning%2C+and+documenting+daily." alt="Typing SVG" />
 </a>

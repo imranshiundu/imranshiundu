@@ -20,50 +20,18 @@
 <br />
 
 <div align="center">
-  <a href="#-github-activity"><img src="https://img.shields.io/badge/Stats-8B5CF6?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Stats" /></a>
-  <a href="#-builder-profile"><img src="https://img.shields.io/badge/About%20Me-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="About Me" /></a>
-  <a href="#-tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-8B5CF6?style=for-the-badge&logo=stackshare&logoColor=white" alt="Tech Stack" /></a>
-  <a href="#-selected-projects"><img src="https://img.shields.io/badge/Projects-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Projects" /></a>
-  <a href="#-work-with-me"><img src="https://img.shields.io/badge/Contact-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact" /></a>
+  <a href="#-builder-profile"><img src="https://img.shields.io/badge/About%20Me-8B5CF6?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="#-tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-8B5CF6?style=for-the-badge&logo=stackshare&logoColor=white" /></a>
+  <a href="./docs/GITHUB_ACTIVITY.md"><img src="https://img.shields.io/badge/GitHub%20Activity-6D28D9?style=for-the-badge&logo=google-analytics&logoColor=white" /></a>
+  <a href="#-featured-projects"><img src="https://img.shields.io/badge/Projects-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="#-work-with-me"><img src="https://img.shields.io/badge/Contact-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </div>
 
 <br />
 
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=6D28D9,9F7AEA&height=80&text=GitHub%20Activity&fontSize=26&fontColor=FFFFFF&fontAlignY=42&animation=fadeIn&font=Outfit" width="100%" alt="GitHub Activity" />
-</div>
-
 <!-- GITHUB-SIGNAL:START -->
 > Stats refresh daily via GitHub Actions.
 <!-- GITHUB-SIGNAL:END -->
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&count_private=true&include_all_commits=true&custom_title=Imran's%20GitHub%20Signal&show=reviews,discussions_started,prs_merged,prs_merged_percentage" alt="GitHub Stats" />
-
-<img src="https://streak-stats.demolab.com?user=imranshiundu&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=450" alt="GitHub Streak" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&custom_title=Language%20Distribution" alt="Language Distribution" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="96%" alt="Contribution Graph" />
-
-</div>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imranshiundu/imranshiundu/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/imranshiundu/imranshiundu/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/imranshiundu/imranshiundu/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
 
 ---
 
@@ -73,20 +41,20 @@
 
 ```ts
 const imran = {
-  role: "Full-stack engineer + product builder",
+  role: "Full-stack engineer + AI systems builder",
   base: "Kenya",
-  focus: ["execution platforms", "AI-assisted workflows", "trading systems", "premium web experiences"],
+  focus: ["trading systems", "AI agents", "execution platforms", "premium web experiences"],
   stack: {
     frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     backend:  ["Java", "Spring Boot", "Node.js", "REST APIs"],
-    data:     ["PostgreSQL", "Supabase", "Prisma"],
+    ai:       ["Groq", "Ollama", "LangChain", "custom agents"],
     infra:    ["Ubuntu", "Docker", "Nginx", "GitHub Actions"]
   },
   rule: "Ship small, ship often, document the system."
 };
 ```
 
-I care about software that feels alive — clear UI, serious backend logic, and documentation good enough for another developer to rebuild the system without guessing.
+I build AI systems that trade, research, and automate. I care about software that feels alive — clear UI, serious backend logic, and documentation good enough for another developer to rebuild without guessing.
 
 ---
 
@@ -106,14 +74,31 @@ I care about software that feels alive — clear UI, serious backend logic, and 
 [![Hire Me](https://img.shields.io/badge/Available%20for-Hire-9F7AEA?style=for-the-badge&logo=handshake&logoColor=white)](https://imranisdev.top)
 [![Collaborate](https://img.shields.io/badge/Open%20to-Collaborations-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu)
 
-→ **[Full tech stack breakdown →](./docs/TECH_STACK.md)**
+→ **[Full tech stack: languages, AI systems, trading infra, tooling →](./docs/TECH_STACK.md)**
 
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=6D28D9,9F7AEA&height=80&text=Selected%20Projects&fontSize=26&fontColor=FFFFFF&fontAlignY=42&animation=fadeIn&font=Outfit" width="100%" alt="Selected Projects" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="96%" alt="Contribution Graph" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imranshiundu/imranshiundu/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/imranshiundu/imranshiundu/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/imranshiundu/imranshiundu/output/github-contribution-grid-snake.svg">
+</picture>
+
+<br />
+<sub><a href="./docs/GITHUB_ACTIVITY.md">→ Full GitHub Activity: stats, streaks, trophies, language breakdown</a></sub>
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=6D28D9,9F7AEA&height=80&text=Featured%20Projects&fontSize=26&fontColor=FFFFFF&fontAlignY=42&animation=fadeIn&font=Outfit" width="100%" alt="Featured Projects" />
 </div>
 
 <!-- PROJECTS:START -->
@@ -222,8 +207,8 @@ My public technical home for projects, experiments, product thinking, and contac
 <!-- AI-SNAPSHOT:END -->
 
 ```txt
-1. Open one task.  2. Build one working improvement.
-3. Commit with a clear message.  4. Push before sleeping.
+1. Open one task.   2. Build one working improvement.
+3. Commit clearly.  4. Push before sleeping.
 ```
 
 <!-- CODING-SYSTEM:START -->
@@ -251,16 +236,16 @@ My public technical home for projects, experiments, product thinking, and contac
 </td>
 <td align="center" width="33%">
 
-**Connect professionally**<br />LinkedIn · partnerships · consulting
+**Connect professionally**<br />partnerships · consulting · roles
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imranshiundu)
 
 </td>
 <td align="center" width="33%">
 
-**Collaborate**<br />Open source · experiments · ideas
+**Collaborate**<br />open source · experiments · ideas
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
+[![GitHub](https://img.shields.io/badge/Open%20Issue-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
 
 </td>
 </tr>
@@ -272,7 +257,7 @@ My public technical home for projects, experiments, product thinking, and contac
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&color=6D28D9,9F7AEA&height=100" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&color=6D28D9,9F7AEA&height=100" width="100%" />
 
 <b>Built with discipline · Updated by automation · Improved by shipping</b><br />
 <a href="#"><img src="https://img.shields.io/badge/Back%20To%20Top-181717?style=flat&logo=arrow-up&logoColor=white" alt="Back to Top" /></a>
@@ -286,7 +271,7 @@ My public technical home for projects, experiments, product thinking, and contac
 <details>
 <summary><b>Search Keywords (SEO)</b></summary>
 <br />
-Full Stack Developer · Java Developer · Spring Boot Expert · Next.js Developer · React Developer · TypeScript · Supabase · Software Engineer · Startup Founder · Technical Consultant · Microservices · API Development · Remote Developer · Kenya Developer · African Tech · Open Source · Available for Hire · Software Architect · Cloud Computing · AWS · Docker · PostgreSQL · SaaS · Enterprise Applications
+Full Stack Developer · Java Developer · Spring Boot Expert · Next.js Developer · React Developer · TypeScript · Supabase · Software Engineer · AI Engineer · Startup Founder · Trading Systems · Multi-agent AI · Technical Consultant · Microservices · API Development · Remote Developer · Kenya Developer · African Tech · Open Source · Available for Hire · Software Architect · Cloud Computing · AWS · Docker · PostgreSQL · SaaS · Enterprise Applications
 </details>
 
 </div>

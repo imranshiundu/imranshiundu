@@ -1,13 +1,14 @@
 import fs from "node:fs/promises";
 
-const username   = process.env.GITHUB_USERNAME || "imranshiundu";
-const githubToken = process.env.GITHUB_TOKEN || "";
-const groqKey    = process.env.GROQ_API_KEY || "";
-const groqModel  = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const username        = process.env.GITHUB_USERNAME || "imranshiundu";
+const githubToken     = process.env.GITHUB_TOKEN || "";
+const groqKey         = process.env.GROQ_API_KEY || "";
+const groqModel       = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
 
-const readmePath      = new URL("../README.md",              import.meta.url);
-const projectsPath    = new URL("../data/projects.json",     import.meta.url);
-const codingSystemPath = new URL("../docs/CODING_SYSTEM.md", import.meta.url);
+const readmePath        = new URL("../README.md",                    import.meta.url);
+const activityPath      = new URL("../docs/GITHUB_ACTIVITY.md",      import.meta.url);
+const projectsPath      = new URL("../data/projects.json",           import.meta.url);
+const codingSystemPath  = new URL("../docs/CODING_SYSTEM.md",        import.meta.url);
 
 // ─── Utilities ───────────────────────────────────────────────────────────────
 
@@ -289,8 +290,9 @@ async function renderCodingSystem() {
 
 async function main() {
   console.log("Fetching GitHub signal...");
-  const [readme, projects, signal] = await Promise.all([
-    fs.readFile(readmePath, "utf8"),
+  const [readme, activityPage, projects, signal] = await Promise.all([
+    fs.readFile(readmePath,   "utf8"),
+    fs.readFile(activityPath, "utf8"),
     fs.readFile(projectsPath, "utf8").then(JSON.parse),
     getPublicSignal()
   ]);
@@ -304,14 +306,20 @@ async function main() {
     renderCodingSystem()
   ]);
 
-  let updated = readme;
-  updated = replaceBlock(updated, "PROJECTS",      renderProjectCards(projects));
-  updated = replaceBlock(updated, "AI-SNAPSHOT",   aiSnapshot);
-  updated = replaceBlock(updated, "GITHUB-SIGNAL", githubSignal);
-  updated = replaceBlock(updated, "CODING-SYSTEM", codingSystem);
+  // Update README.md
+  let updatedReadme = readme;
+  updatedReadme = replaceBlock(updatedReadme, "PROJECTS",      renderProjectCards(projects));
+  updatedReadme = replaceBlock(updatedReadme, "AI-SNAPSHOT",   aiSnapshot);
+  updatedReadme = replaceBlock(updatedReadme, "GITHUB-SIGNAL", githubSignal);
+  updatedReadme = replaceBlock(updatedReadme, "CODING-SYSTEM", codingSystem);
+  await fs.writeFile(readmePath, updatedReadme, "utf8");
+  console.log("✓ README.md blocks refreshed.");
 
-  await fs.writeFile(readmePath, updated, "utf8");
-  console.log("✓ README blocks refreshed successfully.");
+  // Update docs/GITHUB_ACTIVITY.md — only the GITHUB-SIGNAL block
+  const updatedActivity = replaceBlock(activityPage, "GITHUB-SIGNAL", githubSignal);
+  await fs.writeFile(activityPath, updatedActivity, "utf8");
+  console.log("✓ docs/GITHUB_ACTIVITY.md signal refreshed.");
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
+

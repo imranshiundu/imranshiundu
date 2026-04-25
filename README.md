@@ -30,7 +30,21 @@
 <br />
 
 <!-- GITHUB-SIGNAL:START -->
-> Stats refresh daily via GitHub Actions.
+<table><tr>
+<td align="center"><b>📦 Public Repos</b><br/><b>95</b></td>
+<td align="center"><b>👥 Followers</b><br/><b>26</b></td>
+<td align="center"><b>⭐ Total Stars</b><br/><b>7</b></td>
+<td align="center"><b>🔤 Top Languages</b><br/>`HTML` · `JavaScript` · `Python` · `Java` · `TypeScript`</td>
+<td align="center"><b>🔥 This Week</b><br/><b>0 commits</b></td>
+</tr></table>
+
+**Currently active on:** mamahoney, tinyurl, github-triager
+
+
+**📬 Recent commits:**
+- No recent public commits found
+
+<sub>Auto-refreshed by GitHub Actions · Sat, 25 Apr 2026 15:05:34 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ---
@@ -173,13 +187,11 @@ Data pipeline and dashboard for exploring age and sex structured population data
 <td width="50%" valign="top">
 
 ### Orb21
-**Premier execution platform for startups**
+A founder-builder execution platform. Mentioned here once because the profile is bigger than one company.
 
-> "You focus on the idea, we'll handle the execution."
+`Next.js` `systems` `startup execution`
 
-`Next.js` `Java` `Spring Boot` `startup execution`
-
-[![Visit Orb21](https://img.shields.io/badge/Visit-Orb21.com-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)](https://orb21.com)
+[Open project](https://orb21.com)
 
 </td>
 <td width="50%" valign="top">
@@ -187,9 +199,9 @@ Data pipeline and dashboard for exploring age and sex structured population data
 ### Portfolio
 My public technical home for projects, experiments, product thinking, and contact.
 
-`Next.js` `React` `Tailwind CSS` `personal brand`
+`Next.js` `UI` `personal brand`
 
-[![Visit Portfolio](https://img.shields.io/badge/Visit-imranisdev.top-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
+[Open project](https://imranisdev.top)
 
 </td>
 </tr>
@@ -203,7 +215,7 @@ My public technical home for projects, experiments, product thinking, and contac
 </div>
 
 <!-- AI-SNAPSHOT:START -->
-> Shipping daily. Keep the commit meaningful, small, and reviewable.
+> Building and maintaining various repositories with zero recent commits or notable activity.
 <!-- AI-SNAPSHOT:END -->
 
 ```txt
@@ -212,7 +224,7 @@ My public technical home for projects, experiments, product thinking, and contac
 ```
 
 <!-- CODING-SYSTEM:START -->
-> See [docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md) for the full daily coding system.
+→ [Full system: docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md)
 <!-- CODING-SYSTEM:END -->
 
 ---

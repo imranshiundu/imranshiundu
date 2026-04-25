@@ -13,7 +13,21 @@
 ## 📡 Live Signal
 
 <!-- GITHUB-SIGNAL:START -->
-> Stats refresh daily via GitHub Actions.
+<table><tr>
+<td align="center"><b>📦 Public Repos</b><br/><b>95</b></td>
+<td align="center"><b>👥 Followers</b><br/><b>26</b></td>
+<td align="center"><b>⭐ Total Stars</b><br/><b>7</b></td>
+<td align="center"><b>🔤 Top Languages</b><br/>`HTML` · `JavaScript` · `Python` · `Java` · `TypeScript`</td>
+<td align="center"><b>🔥 This Week</b><br/><b>0 commits</b></td>
+</tr></table>
+
+**Currently active on:** mamahoney, tinyurl, github-triager
+
+
+**📬 Recent commits:**
+- No recent public commits found
+
+<sub>Auto-refreshed by GitHub Actions · Sat, 25 Apr 2026 15:05:34 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ---

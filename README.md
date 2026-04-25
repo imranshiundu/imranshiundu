@@ -1,7 +1,9 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=8B5CF6&text=Imran%20Shiundu&fontColor=FFFFFF&fontSize=42&fontAlignY=36&desc=Full-stack%20builder%20%C2%B7%20systems%20thinker%20%C2%B7%20product%20executor&descAlignY=58&animation=fadeIn" width="100%" alt="Imran Shiundu profile banner" />
+
 <a href="https://orb21.com">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=600&size=32&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=800&lines=Founder+of+Orb21;Java+%26+Spring+Boot+Specialist;Next.js+%26+Supabase+Expert;Building+Digital+Empires;Turning+Ideas+Into+Reality" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=I+build+useful+systems%2C+not+just+repositories.;Backend+%2B+Frontend+%2B+Product+Thinking.;Java+%2F+Spring+Boot+%C2%B7+Next.js+%C2%B7+TypeScript.;Currently+shipping%2C+learning%2C+and+documenting+daily." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -10,56 +12,57 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imranshiundu)
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/imranshiundu)
-[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://reddit.com/user/imranshiundu)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:imranshiundu@gmail.com)
+[![Orb21](https://img.shields.io/badge/Orb21-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)](https://orb21.com)
+[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/imranshiundu)
 
 </div>
 
 <br />
 
 <div align="center">
-  <a href="#about-me"><img src="https://img.shields.io/badge/About%20Me-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="About Me" /></a>
-  <a href="#featured-projects"><img src="https://img.shields.io/badge/Projects-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Projects" /></a>
-  <a href="#github-statistics"><img src="https://img.shields.io/badge/Stats-8B5CF6?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Stats" /></a>
+  <a href="#builder-profile"><img src="https://img.shields.io/badge/About%20Me-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="About Me" /></a>
+  <a href="#selected-projects"><img src="https://img.shields.io/badge/Projects-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Projects" /></a>
+  <a href="#github-activity"><img src="https://img.shields.io/badge/Stats-8B5CF6?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Stats" /></a>
   <a href="#tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-8B5CF6?style=for-the-badge&logo=stackshare&logoColor=white" alt="Tech Stack" /></a>
-  <a href="#how-to-reach-me-for-collaboration"><img src="https://img.shields.io/badge/Contact-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact" /></a>
+  <a href="#work-with-me"><img src="https://img.shields.io/badge/Contact-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact" /></a>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=About%20Me&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="About Me" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Builder%20Profile&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Builder Profile" />
 </div>
 
-```javascript
+```ts
 const imran = {
-  role: "Founder & Full Stack Engineer",
-  company: "Orb21",
-  motto: "You focus on the idea, we'll handle the execution.",
-  expertise: {
-    backend: ["Java", "Spring Boot", "Microservices"],
-    frontend: ["Next.js", "React", "TypeScript"],
-    infrastructure: ["Supabase", "AWS", "Docker"],
-    design: ["Tailwind CSS", "Modern UI/UX"]
+  role: "Full-stack engineer + product builder",
+  base: "Kenya",
+  focus: [
+    "execution platforms",
+    "developer productivity tools",
+    "AI-assisted workflows",
+    "trading and automation systems",
+    "data dashboards",
+    "premium web experiences"
+  ],
+  stack: {
+    frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    backend: ["Java", "Spring Boot", "Node.js", "REST APIs"],
+    data: ["PostgreSQL", "Supabase", "JSON stores", "Prisma"],
+    infra: ["Ubuntu", "Docker", "Nginx", "PM2", "GitHub Actions"]
   },
-  currentFocus: "Scaling Orb21 to empower startup founders globally.",
-  philosophy: "Great code is simple, scalable, and solves real problems.",
-  openToWork: true,
-  availableFor: [
-    "Full-time opportunities",
-    "Contract projects",
-    "Technical consulting",
-    "Open source collaborations",
-    "Startup partnerships"
-  ]
+  operatingRule: "Ship small, ship often, document the system."
 };
 ```
 
+I care about software that feels alive: clear UI, serious backend logic, useful automation, and documentation good enough for another developer to rebuild the system without guessing.
+
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Open%20to%20Opportunities&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Open to Opportunities" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Open%20to%20Opportunities&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Open to Opportunities" />
 </div>
 
 <div align="center">
@@ -109,41 +112,27 @@ Open source projects, startup co-founding, and technical mentorship
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Featured%20Projects&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Featured Projects" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=What%20I%20Am%20Building%20Toward&fontSize=28&animation=fadeIn&fontAlignY=38" alt="What I Am Building Toward" />
 </div>
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### Orb21
-**Premier execution platform for startups**
-
-> "You focus on the idea, we'll handle the execution."
-
-[![Visit Orb21](https://img.shields.io/badge/Visit-Orb21.com-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)](https://orb21.com)
- 
- ```yaml
- Stack: Java, Spring Boot, Next.js
- Features: Microservices, Startup Execution
- ```
- 
- Fast-track your startup from concept to launch with a team dedicated to turning your vision into reality.
+### Product systems
+Platforms where users can register, submit, track, manage, pay, collaborate, and see progress clearly.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### Portfolio
-**High-performance web showcase**
+### AI-assisted execution
+Tools that help founders, builders, admins, and operators move faster without becoming noisy or fake.
 
-[![Visit Portfolio](https://img.shields.io/badge/Visit-imranisdev.top-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
+</td>
+<td width="33%" valign="top">
 
-```yaml
-Stack: Next.js, React, Tailwind CSS
-Features: Premium UI/UX, Fast Performance
-```
-
-A visually immersive portfolio showcasing technical capabilities and design excellence.
+### Practical automation
+Dashboards, bots, schedulers, admin panels, and APIs that reduce repeated human work.
 
 </td>
 </tr>
@@ -152,7 +141,123 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Core%20Competencies&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Core Competencies" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Selected%20Projects&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Selected Projects" />
+</div>
+
+<!-- PROJECTS:START -->
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### AgentPrometheus
+Hierarchical multi-agent system experiment for combining research, coding, planning, and autonomous task execution.
+
+`Python` `agents` `automation` `research`
+
+[Open project](https://github.com/imranshiundu/AgentPrometheus)
+
+</td>
+<td width="50%" valign="top">
+
+### C3NTR-L-COMM-ND
+Telegram-based Linux control and automation system for remote operations, self-healing workflows, and system commands.
+
+`Python` `Telegram Bot` `Linux` `automation`
+
+[Open project](https://github.com/imranshiundu/C3NTR-L-COMM-ND)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Patricia
+Legal intelligence and case-law audio platform focused on making legal information easier to explore and consume.
+
+`TypeScript` `AI` `legal-tech` `audio`
+
+[Open project](https://github.com/imranshiundu/Patricia)
+
+</td>
+<td width="50%" valign="top">
+
+### MovieDB
+Spring Boot REST API for movie data management, CRUD operations, filtering, caching, and relationship modeling.
+
+`Java` `Spring Boot` `REST API` `backend`
+
+[Open project](https://github.com/imranshiundu/MovieDB)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### pickup
+A background productivity system designed to reduce interruption recovery cost and help users return to deep work.
+
+`Rust` `productivity` `desktop thinking`
+
+[Open project](https://github.com/imranshiundu/pickup)
+
+</td>
+<td width="50%" valign="top">
+
+### population
+Data pipeline and dashboard for exploring age and sex structured population datasets for Kenya and Uganda.
+
+`Python` `data pipeline` `analytics` `dashboard`
+
+[Open project](https://github.com/imranshiundu/population)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Orb21
+**Premier execution platform for startups**
+
+> "You focus on the idea, we'll handle the execution."
+
+`Next.js` `Java` `Spring Boot` `startup execution`
+
+[![Visit Orb21](https://img.shields.io/badge/Visit-Orb21.com-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)](https://orb21.com)
+
+</td>
+<td width="50%" valign="top">
+
+### Portfolio
+My public technical home for projects, experiments, product thinking, and contact.
+
+`Next.js` `React` `Tailwind CSS` `personal brand`
+
+[![Visit Portfolio](https://img.shields.io/badge/Visit-imranisdev.top-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
+
+</td>
+</tr>
+</table>
+<!-- PROJECTS:END -->
+
+<br />
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Systems%20to%20Keep%20Exploring&fontSize=28&animation=fadeIn&fontAlignY=38" alt="Systems to Keep Exploring" />
+</div>
+
+<table>
+<tr>
+<td width="25%" align="center"><b>Founder tools</b><br />idea validation, team matching, traction workflows</td>
+<td width="25%" align="center"><b>Trading infra</b><br />signal systems, risk controls, execution dashboards</td>
+<td width="25%" align="center"><b>Local AI tools</b><br />small useful assistants, agent workflows, coding copilots</td>
+<td width="25%" align="center"><b>Public data products</b><br />dashboards, civic datasets, lightweight analytics</td>
+</tr>
+</table>
+
+<br />
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Core%20Competencies&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Core Competencies" />
 </div>
 
 <table>
@@ -203,26 +308,90 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Tech%20Stack&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Tech Stack" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Daily%20Execution%20System&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Daily Execution System" />
+</div>
+
+<!-- AI-SNAPSHOT:START -->
+> Current operating mode: ship one real improvement today. Keep the commit meaningful, small, and reviewable.
+<!-- AI-SNAPSHOT:END -->
+
+```txt
+Daily minimum:
+1. Open one issue or task.
+2. Build one small working improvement.
+3. Commit with a clear message.
+4. Push before sleeping.
+5. Write one line about what changed.
+```
+
+I do not want fake green squares. I want visible proof that I am becoming faster, cleaner, and more consistent.
+
+<br />
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Tech%20Stack&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Tech Stack" />
 </div>
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,spring,ts,js,nextjs,react,tailwind,supabase,postgres,html,css,nodejs,docker,git,aws,vercel&theme=dark&perline=8" alt="Tech Stack" />
+    <img src="https://skillicons.dev/icons?i=java,spring,ts,js,nextjs,react,tailwind,supabase,postgres,nodejs,docker,git,githubactions,aws,vercel,linux&theme=dark&perline=8" alt="Tech Stack" />
   </a>
 </div>
 
 <br />
 
+<table>
+<tr>
+<td width="25%" valign="top">
+
+### Backend
+- Java
+- Spring Boot
+- REST APIs
+- Microservices
+
+</td>
+<td width="25%" valign="top">
+
+### Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+</td>
+<td width="25%" valign="top">
+
+### Infrastructure
+- Ubuntu / Linux
+- Docker & Nginx
+- PM2
+- GitHub Actions
+
+</td>
+<td width="25%" valign="top">
+
+### Product
+- UI systems
+- Admin dashboards
+- Automation flows
+- Technical docs
+
+</td>
+</tr>
+</table>
+
+<br />
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=GitHub%20Statistics&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="GitHub Statistics" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=GitHub%20Activity&fontSize=30&animation=fadeIn&fontAlignY=38" alt="GitHub Activity" />
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&custom_title=Imran's%20GitHub%20Signal" alt="GitHub Stats" />
 
-<img src="https://streak-stats.demolab.com?user=imranshiundu&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+<img height="170" src="https://streak-stats.demolab.com?user=imranshiundu&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 
@@ -231,31 +400,19 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=3D%20Contribution%20Graph&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="3D Contribution Graph" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Contribution%20Activity&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Contribution Activity" />
 </div>
 
 <div align="center">
 
-<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
-
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Contribution%20Activity&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Contribution Activity" />
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" alt="Contribution Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="96%" alt="Contribution Graph" />
 
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=The%20Snake&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Snake Eating My Contributions" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=The%20Snake&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Contribution Snake" />
 </div>
 
 <div align="center">
@@ -271,55 +428,10 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Achievements&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Achievements" />
+  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=Work%20With%20Me&fontSize=30&animation=fadeIn&fontAlignY=38" alt="Work With Me" />
 </div>
 
 <div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=imranshiundu&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B" alt="GitHub Trophies" />
-
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Latest%20Blog%20Posts&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Latest Blog Posts" />
-</div>
-
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
-
-<br />
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Philosophy&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="Philosophy" />
-</div>
-
-<div align="center">
-
-> **"The best code is code that doesn't need to be written. The second best is code that's so simple it obviously has no deficiencies."**
-> 
-> Building with intention, scaling with precision.
-
-</div>
-
-<br />
-
-<div align="center">
-
-![Random Joke](https://readme-jokes.vercel.app/api?theme=tokyonight&hide_border=true)
-
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&section=header&text=Contact%20Me&fontSize=30&animation=fadeIn&fontAlignY=38&desc=" alt="How to Reach Me for Collaboration" />
-</div>
-
-<div align="center">
-
-### Quick Collaboration Request
 
 [![Open Collaboration Request](https://img.shields.io/badge/Submit_Collaboration_Request-B794F4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imranshiundu/imranshiundu/issues/new/choose)
 
@@ -359,21 +471,16 @@ A visually immersive portfolio showcasing technical capabilities and design exce
 </tr>
 </table>
 
-**GitHub doesn't notify me when someone wants to collaborate via my profile.**  
-**Please use the contact methods above to reach out!**
-
 </div>
 
 <br />
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?section=footer&type=waving&color=8B5CF6&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?section=footer&type=waving&color=8B5CF6&height=120" width="100%" />
 
-<div align="center">
-  <b>© 2026 Imran Shiundu • Built with Code</b><br />
-  <a href="#imran-shiundu"><img src="https://img.shields.io/badge/Back%20To%20Top-181717?style=flat&logo=arrow-up&logoColor=white" alt="Back to Top" /></a>
-</div>
+<b>Built with discipline. Updated by automation. Improved by shipping.</b><br />
+<a href="#imran-shiundu"><img src="https://img.shields.io/badge/Back%20To%20Top-181717?style=flat&logo=arrow-up&logoColor=white" alt="Back to Top" /></a>
 
 <br />
 

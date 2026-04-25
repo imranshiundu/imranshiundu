@@ -326,6 +326,10 @@ Daily minimum:
 
 I do not want fake green squares. I want visible proof that I am becoming faster, cleaner, and more consistent.
 
+<!-- CODING-SYSTEM:START -->
+> See [docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md) for the full daily coding system.
+<!-- CODING-SYSTEM:END -->
+
 <br />
 
 <div align="center">
@@ -387,13 +391,21 @@ I do not want fake green squares. I want visible proof that I am becoming faster
   <img src="https://capsule-render.vercel.app/api?section=header&type=waving&color=8B5CF6&height=100&text=GitHub%20Activity&fontSize=30&animation=fadeIn&fontAlignY=38" alt="GitHub Activity" />
 </div>
 
+<!-- GITHUB-SIGNAL:START -->
+> Stats auto-refresh daily via GitHub Actions.
+<!-- GITHUB-SIGNAL:END -->
+
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&custom_title=Imran's%20GitHub%20Signal" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=imranshiundu&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&count_private=true&include_all_commits=true&custom_title=Imran's%20GitHub%20Signal&show=reviews,discussions_started,prs_merged,prs_merged_percentage" alt="GitHub Stats" />
 
-<img height="170" src="https://streak-stats.demolab.com?user=imranshiundu&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+<img src="https://streak-stats.demolab.com?user=imranshiundu&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=450" alt="GitHub Streak" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imranshiundu&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&custom_title=Language%20Distribution" alt="Language Distribution" />
 
 </div>
 

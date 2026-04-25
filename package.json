@@ -1,0 +1,12 @@
+{
+  "name": "imran-github-profile-upgrade",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "readme:refresh": "node scripts/update-profile-readme.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

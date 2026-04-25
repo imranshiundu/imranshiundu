@@ -216,13 +216,11 @@ Data pipeline and dashboard for exploring age and sex structured population data
 <td width="50%" valign="top">
 
 ### Orb21
-**Premier execution platform for startups**
+A founder-builder execution platform. Mentioned here once because the profile is bigger than one company.
 
-> "You focus on the idea, we'll handle the execution."
+`Next.js` `systems` `startup execution`
 
-`Next.js` `Java` `Spring Boot` `startup execution`
-
-[![Visit Orb21](https://img.shields.io/badge/Visit-Orb21.com-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)](https://orb21.com)
+[Open project](https://orb21.com)
 
 </td>
 <td width="50%" valign="top">
@@ -230,9 +228,9 @@ Data pipeline and dashboard for exploring age and sex structured population data
 ### Portfolio
 My public technical home for projects, experiments, product thinking, and contact.
 
-`Next.js` `React` `Tailwind CSS` `personal brand`
+`Next.js` `UI` `personal brand`
 
-[![Visit Portfolio](https://img.shields.io/badge/Visit-imranisdev.top-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://imranisdev.top)
+[Open project](https://imranisdev.top)
 
 </td>
 </tr>
@@ -312,7 +310,7 @@ My public technical home for projects, experiments, product thinking, and contac
 </div>
 
 <!-- AI-SNAPSHOT:START -->
-> Current operating mode: ship one real improvement today. Keep the commit meaningful, small, and reviewable.
+> Current operating mode: ship one real improvement today. 95 public repos, 18 total stars. Keep the commit meaningful, small, and reviewable.
 <!-- AI-SNAPSHOT:END -->
 
 ```txt
@@ -327,7 +325,39 @@ Daily minimum:
 I do not want fake green squares. I want visible proof that I am becoming faster, cleaner, and more consistent.
 
 <!-- CODING-SYSTEM:START -->
-> See [docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md) for the full daily coding system.
+**The rule:** One meaningful commit per day is better than ten empty commits.
+
+A commit counts if it improves one of these:
+
+- Code quality
+- UI/UX
+- Documentation
+- Tests
+- Automation
+- Deployment
+- Bug fixing
+- Architecture clarity
+**Pick one task — small enough to finish today:**
+Choose one task small enough to finish today:
+
+- Fix one bug
+- Add one route
+- Improve one component
+- Write one API endpoint
+- Add one test
+- Improve one README section
+- Refactor one ugly function
+- Add one script that saves future time
+**Avoid these anti-patterns:**
+Avoid these:
+
+- Empty commits just to grow the graph
+- Creating ten repos and finishing none
+- Rewriting the whole UI before fixing the core bug
+- Pushing broken code to main without checks
+- Adding AI-generated code you do not understand
+- Hiding weak documentation behind fancy badges
+<sub>Source: [docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md)</sub>
 <!-- CODING-SYSTEM:END -->
 
 <br />
@@ -392,7 +422,28 @@ I do not want fake green squares. I want visible proof that I am becoming faster
 </div>
 
 <!-- GITHUB-SIGNAL:START -->
-> Stats auto-refresh daily via GitHub Actions.
+<table>
+<tr>
+<td align="center"><b>📦 Public Repos</b><br/><b>95</b></td>
+<td align="center"><b>👥 Followers</b><br/><b>26</b></td>
+<td align="center"><b>⭐ Total Stars</b><br/><b>18</b></td>
+<td align="center"><b>🔤 Top Languages</b><br/>`HTML` ×17  `JavaScript` ×16  `Python` ×10  `Java` ×7  `TypeScript` ×6</td>
+</tr>
+</table>
+
+**🏆 Most starred repos:**
+- **Jarvis** `Python` ⭐ 1
+- **Imflix** `HTML` ⭐ 1
+- **Group-Task-List** `HTML` ⭐ 1
+- **NarmiCode** `HTML` ⭐ 1
+- **Amawel-Pharmercy** `JavaScript` ⭐ 1
+
+**📬 Recent pushes:**
+- `imranshiundu`: pushed
+- `imranshiundu`: pushed
+- `mamahoney`: pushed
+
+<sub>Auto-refreshed by GitHub Actions · Sat, 25 Apr 2026 14:15:49 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 <div align="center">

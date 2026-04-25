@@ -1,134 +1,144 @@
-# Imran's Daily Coding System
+<div align="center">
 
-This system is designed to increase real productivity and real commits without creating fake activity.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,6D28D9,9F7AEA&height=200&text=Daily%20Coding%20System&fontSize=42&fontColor=FFFFFF&fontAlignY=38&animation=twinkling&font=Outfit&desc=the%20system%20behind%20the%20commits&descAlignY=58&descSize=16" width="100%" alt="Daily Coding System" />
 
-## The rule
+[![Back to Profile](https://img.shields.io/badge/←%20Back%20to%20Profile-181717?style=for-the-badge&logo=github&logoColor=white)](../README.md)
 
-One meaningful commit per day is better than ten empty commits.
+</div>
+
+---
+
+## ⚡ The Rule
+
+<div align="center">
+
+> **One meaningful commit per day is better than ten empty commits.**
+
+![Rule](https://img.shields.io/badge/One%20meaningful%20commit%20beats%20ten%20empty%20ones-8B5CF6?style=for-the-badge&logoColor=white)
+
+</div>
 
 A commit counts if it improves one of these:
 
-- Code quality
-- UI/UX
-- Documentation
-- Tests
-- Automation
-- Deployment
-- Bug fixing
-- Architecture clarity
+<div align="center">
 
-## Daily workflow
+![Code Quality](https://img.shields.io/badge/Code%20Quality-✓-10B981?style=flat-square)
+![UI/UX](https://img.shields.io/badge/UI%20%2F%20UX-✓-10B981?style=flat-square)
+![Documentation](https://img.shields.io/badge/Documentation-✓-10B981?style=flat-square)
+![Tests](https://img.shields.io/badge/Tests-✓-10B981?style=flat-square)
+![Automation](https://img.shields.io/badge/Automation-✓-10B981?style=flat-square)
+![Bug Fix](https://img.shields.io/badge/Bug%20Fix-✓-10B981?style=flat-square)
+![Architecture](https://img.shields.io/badge/Architecture-✓-10B981?style=flat-square)
+![Deployment](https://img.shields.io/badge/Deployment-✓-10B981?style=flat-square)
 
-### 1. Pick one task
+</div>
 
-Choose one task small enough to finish today:
+---
 
-- Fix one bug
-- Add one route
-- Improve one component
-- Write one API endpoint
-- Add one test
-- Improve one README section
-- Refactor one ugly function
-- Add one script that saves future time
+## 📅 Daily Minimum
 
-### 2. Create a branch
+<div align="center">
 
-```bash
-git checkout -b work/today-small-win
-```
+| Step | Action |
+|:---:|---|
+| ![1](https://img.shields.io/badge/1-6D28D9?style=flat-square) | Pick one task small enough to finish today |
+| ![2](https://img.shields.io/badge/2-7C3AED?style=flat-square) | Build the smallest working version |
+| ![3](https://img.shields.io/badge/3-8B5CF6?style=flat-square) | Commit with a clean message |
+| ![4](https://img.shields.io/badge/4-9F7AEA?style=flat-square) | Push before sleeping |
+| ![5](https://img.shields.io/badge/5-A78BFA?style=flat-square) | Write one line about what changed |
 
-### 3. Build the smallest working version
+</div>
 
-Do not start with a massive rewrite. Make a working change first.
+---
 
-### 4. Test it
+## 💬 Commit Message Format
 
-Use whatever the project supports:
+<div align="center">
 
-```bash
-npm run lint
-npm run test
-npm run build
-```
+![feat](https://img.shields.io/badge/feat%3A-new%20feature-10B981?style=flat-square)
+![fix](https://img.shields.io/badge/fix%3A-bug%20fixed-EF4444?style=flat-square)
+![docs](https://img.shields.io/badge/docs%3A-documentation-3B82F6?style=flat-square)
+![refactor](https://img.shields.io/badge/refactor%3A-code%20improved-F59E0B?style=flat-square)
+![test](https://img.shields.io/badge/test%3A-tests%20added-8B5CF6?style=flat-square)
+![chore](https://img.shields.io/badge/chore%3A-maintenance-6B7280?style=flat-square)
 
-or:
+</div>
 
 ```bash
-./mvnw test
+feat: add AI signal to trade execution loop
+fix: handle empty API response on market fetch
+docs: update trading engine setup guide
+refactor: simplify agent orchestration middleware
 ```
 
-### 5. Commit with a clean message
+---
 
-```bash
-git add .
-git commit -m "feat: add booking status filter"
-git push
-```
+## 🚫 Anti-Patterns
 
-## Weekly system
+<div align="center">
 
-Every Sunday, review your repositories and ask:
+![Anti-1](https://img.shields.io/badge/✗%20Empty%20commits%20to%20grow%20the%20graph-EF4444?style=for-the-badge)
+![Anti-2](https://img.shields.io/badge/✗%20Ten%20repos%20open%2C%20none%20finished-EF4444?style=for-the-badge)
+![Anti-3](https://img.shields.io/badge/✗%20Rewriting%20UI%20before%20fixing%20the%20bug-EF4444?style=for-the-badge)
+![Anti-4](https://img.shields.io/badge/✗%20Pushing%20broken%20code%20to%20main-EF4444?style=for-the-badge)
+![Anti-5](https://img.shields.io/badge/✗%20AI%20code%20I%20do%20not%20understand-EF4444?style=for-the-badge)
+![Anti-6](https://img.shields.io/badge/✗%20Fancy%20badges%20hiding%20weak%20docs-EF4444?style=for-the-badge)
 
-1. Which project moved forward this week?
-2. Which project is abandoned and should be archived?
-3. Which README is unclear?
-4. Which repo needs tests?
-5. Which repo could become a real product?
+</div>
 
-## Project lanes
+---
 
-Keep only three active lanes at once:
+## 🗓️ Weekly Review (Every Sunday)
 
-1. Main product lane
-2. Learning/research lane
-3. Maintenance/documentation lane
+<div align="center">
 
-Everything else goes into backlog.
+| Question | Why |
+|---|---|
+| Which project moved forward? | Keep momentum visible |
+| Which repo should be archived? | Kill dead weight |
+| Which README is unclear? | Docs are code |
+| Which repo needs tests? | Ship with confidence |
+| Which could become a real product? | Think product, not project |
 
-## Recommended local tools
+</div>
 
-- VS Code or Cursor for daily coding
-- GitHub Issues for tasks
-- GitHub Projects for weekly planning
-- GitHub Actions for CI and README automation
-- Prettier / ESLint for frontend consistency
-- Maven / Gradle checks for Java projects
-- Docker Compose for repeatable local setup
-- `gh` CLI for fast GitHub work
+---
 
-## Commit message format
+## 🏗️ Project Lanes
 
-Use simple conventional commits:
+> Keep only **three active lanes** at once.
 
-```txt
-feat: add user dashboard card
-fix: handle empty API response
-docs: improve setup instructions
-refactor: simplify auth middleware
-test: cover booking tracker status
-chore: update README automation
-```
+<div align="center">
 
-## Anti-patterns
+![Lane 1](https://img.shields.io/badge/Lane%201-Main%20Product-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white)
+![Lane 2](https://img.shields.io/badge/Lane%202-Learning%20%2F%20Research-6D28D9?style=for-the-badge&logo=book&logoColor=white)
+![Lane 3](https://img.shields.io/badge/Lane%203-Maintenance%20%2F%20Docs-4B5563?style=for-the-badge&logo=wrench&logoColor=white)
 
-Avoid these:
+Everything else goes to backlog.
 
-- Empty commits just to grow the graph
-- Creating ten repos and finishing none
-- Rewriting the whole UI before fixing the core bug
-- Pushing broken code to main without checks
-- Adding AI-generated code you do not understand
-- Hiding weak documentation behind fancy badges
+</div>
 
-## The productive day template
+---
+
+## 📋 Today I Shipped
 
 ```txt
 Today I shipped:
 Problem:
 Change made:
-Test/check:
+Test / check:
 Next step:
 ```
 
-Put this in a GitHub issue, PR, or local log. It will make your work look more professional and help you remember what you actually built.
+> Drop this in a GitHub issue, PR, or local log. It makes your work look professional and helps you remember what you actually built.
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&color=6D28D9,9F7AEA&height=80" width="100%" />
+
+[![Back to Profile](https://img.shields.io/badge/←%20Back%20to%20Profile-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](../README.md)
+[![Tech Stack](https://img.shields.io/badge/Tech%20Stack%20→-6D28D9?style=for-the-badge&logo=stackshare&logoColor=white)](./TECH_STACK.md)
+
+</div>

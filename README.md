@@ -30,18 +30,6 @@
 <br />
 
 <!-- GITHUB-SIGNAL:START -->
-<table><tr>
-<td align="center"><b>📦 Public Repos</b><br/><b>95</b></td>
-<td align="center"><b>👥 Followers</b><br/><b>27</b></td>
-<td align="center"><b>⭐ Total Stars</b><br/><b>7</b></td>
-<td align="center"><b>🔤 Top Languages</b><br/>`HTML` · `JavaScript` · `Python` · `Java` · `TypeScript`</td>
-</tr></table>
-
-**Currently active on:** mamahoney, tinyurl, github-triager
-
-**📬 Recent commits:**
-- No recent public commits found
-
 <sub>Auto-refreshed by GitHub Actions · Wed, 29 Apr 2026 08:08:12 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 

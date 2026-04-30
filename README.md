@@ -30,7 +30,19 @@
 <br />
 
 <!-- GITHUB-SIGNAL:START -->
-<sub>Auto-refreshed by GitHub Actions · Wed, 29 Apr 2026 08:08:12 GMT</sub>
+<table><tr>
+<td align="center"><b>📦 Public Repos</b><br/><b>104</b></td>
+<td align="center"><b>👥 Followers</b><br/><b>27</b></td>
+<td align="center"><b>⭐ Total Stars</b><br/><b>11</b></td>
+<td align="center"><b>🔤 Top Languages</b><br/>`JavaScript` · `HTML` · `Python` · `Java` · `TypeScript`</td>
+</tr></table>
+
+**Currently active:** building in private.
+
+**📬 Recent commits:**
+- No recent public commits found
+
+<sub>Auto-refreshed by GitHub Actions · Thu, 30 Apr 2026 08:12:26 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ---
@@ -201,7 +213,7 @@ My public technical home for projects, experiments, product thinking, and contac
 </div>
 
 <!-- AI-SNAPSHOT:START -->
-> Building and maintaining various open source projects with minimal community engagement.
+> Building and maintaining various projects with minimal public engagement or recent activity.
 <!-- AI-SNAPSHOT:END -->
 
 ```txt

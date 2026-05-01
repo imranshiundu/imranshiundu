@@ -14,18 +14,18 @@
 
 <!-- GITHUB-SIGNAL:START -->
 <table><tr>
-<td align="center"><b>📦 Public Repos</b><br/><b>104</b></td>
+<td align="center"><b>📦 Public Repos</b><br/><b>108</b></td>
 <td align="center"><b>👥 Followers</b><br/><b>27</b></td>
 <td align="center"><b>⭐ Total Stars</b><br/><b>11</b></td>
 <td align="center"><b>🔤 Top Languages</b><br/>`JavaScript` · `HTML` · `Python` · `Java` · `TypeScript`</td>
 </tr></table>
 
-**Currently active:** building in private.
+**Currently active on:** Hoovi, MovieDB, open-defense-kit
 
 **📬 Recent commits:**
 - No recent public commits found
 
-<sub>Auto-refreshed by GitHub Actions · Thu, 30 Apr 2026 08:12:26 GMT</sub>
+<sub>Auto-refreshed by GitHub Actions · Fri, 01 May 2026 08:06:27 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ---

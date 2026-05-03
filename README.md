@@ -1,6 +1,6 @@
-<img src="./profile-3d-contrib/intro-banner.svg" width="100%" alt="Software engineer building AI systems, developer tools, trading infrastructure, and web products" />
+<img src="./profile-3d-contrib/intro-banner.svg" width="100%" alt="Hi, I'm Imran. I build useful software systems." />
 
-[Website](https://imranisdev.top) · [LinkedIn](https://linkedin.com/in/imranshiundu) · [GitHub](https://github.com/imranshiundu) · [Email](mailto:imranshiundu@gmail.com)
+<a href="https://imranisdev.top"><img src="./profile-3d-contrib/link-strip.svg" width="100%" alt="Website, LinkedIn, GitHub, and Email links" /></a>
 
 ## Skills
 

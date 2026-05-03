@@ -9,20 +9,19 @@ I work across product, frontend, backend, infrastructure, and documentation. My 
 ## Current signal
 
 <!-- GITHUB-SIGNAL:START -->
-<table>
-<tr>
-<td><strong>Public repositories</strong><br/>113</td>
-<td><strong>Followers</strong><br/>26</td>
-<td><strong>Total stars</strong><br/>11</td>
-<td><strong>Top languages</strong><br/>JavaScript · HTML · Python · TypeScript · Java</td>
-</tr>
-</table>
+<table><tr>
+<td align="center"><b>📦 Public Repos</b><br/><b>114</b></td>
+<td align="center"><b>👥 Followers</b><br/><b>26</b></td>
+<td align="center"><b>⭐ Total Stars</b><br/><b>11</b></td>
+<td align="center"><b>🔤 Top Languages</b><br/>`JavaScript` · `HTML` · `Python` · `TypeScript` · `Java`</td>
+</tr></table>
 
-Current focus: building and maintaining Patricia and Gravity.
+**Currently active on:** Hoo-browser, bankingApp
 
-Recent public commits: no recent public commits found.
+**📬 Recent commits:**
+- No recent public commits found
 
-<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 07:54:58 GMT</sub>
+<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 17:59:24 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ## What I build
@@ -93,16 +92,11 @@ Browser experiment focused on a clean browsing interface, web access, local tool
 ## Operating style
 
 <!-- AI-SNAPSHOT:START -->
-> Building and maintaining Patricia and Gravity with practical, visible improvements.
+> Building and shipping updates to Hoo-browser and bankingApp.
 <!-- AI-SNAPSHOT:END -->
 
 <!-- CODING-SYSTEM:START -->
-1. Define one useful outcome.
-2. Build the smallest working improvement.
-3. Test the behavior before expanding the scope.
-4. Document the decision so another developer can continue.
-
-[Read the full coding system](./docs/CODING_SYSTEM.md)
+→ [Full system: docs/CODING_SYSTEM.md](./docs/CODING_SYSTEM.md)
 <!-- CODING-SYSTEM:END -->
 
 ## Contact

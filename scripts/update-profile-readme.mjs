@@ -26,11 +26,14 @@ function esc(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function replaceBlock(source, name, replacement) {
+function replaceBlock(source, name, replacement, required = true) {
   const start = `<!-- ${name}:START -->`;
   const end = `<!-- ${name}:END -->`;
   const pattern = new RegExp(`${esc(start)}[\\s\\S]*?${esc(end)}`);
-  if (!pattern.test(source)) throw new Error(`Missing markers for ${name}`);
+  if (!pattern.test(source)) {
+    if (required) throw new Error(`Missing markers for ${name}`);
+    return source;
+  }
   return source.replace(pattern, `${start}\n${replacement.trim()}\n${end}`);
 }
 
@@ -115,12 +118,7 @@ async function getPublicSignal() {
       .flatMap((event) => {
         const repo = event.repo.name.replace(`${username}/`, "");
         return (event.payload?.commits || [])
-          .filter((commit) =>
-            commit.message &&
-            !commit.message.startsWith("Merge") &&
-            !commit.message.includes("[skip ci]") &&
-            !commit.message.includes("generated")
-          )
+          .filter((commit) => commit.message && !commit.message.startsWith("Merge") && !commit.message.includes("[skip ci]") && !commit.message.includes("generated"))
           .map((commit) => ({ repo, message: commit.message.split("\n")[0], date: event.created_at }));
       })
       .slice(0, 8);
@@ -170,11 +168,24 @@ function renderRecentCommits(signal) {
   return signal.recentCommits.slice(0, 4).map((commit) => `${commit.repo}: ${commit.message}`).join("<br/>\n");
 }
 
+function renderGithubSignal(signal) {
+  const now = new Date().toUTCString();
+  return `<table width="100%">
+<tr>
+<td align="center" width="33%"><strong>Public repositories</strong><br/>${signal.publicRepos}</td>
+<td align="center" width="33%"><strong>Followers</strong><br/>${signal.followers}</td>
+<td align="center" width="33%"><strong>Total stars</strong><br/>${signal.totalStars}</td>
+</tr>
+</table>
+
+<strong>Recent public commits:</strong><br/>
+${renderRecentCommits(signal)}
+
+<sub>Auto-refreshed by GitHub Actions · ${now}</sub>`;
+}
+
 function renderLanguageSvg(languageTotals) {
-  const entries = Object.entries(languageTotals)
-    .filter(([, bytes]) => bytes > 0)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 6);
+  const entries = Object.entries(languageTotals).filter(([, bytes]) => bytes > 0).sort((a, b) => b[1] - a[1]).slice(0, 6);
 
   if (entries.length === 0) {
     return `<svg width="720" height="132" viewBox="0 0 720 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language activity awaiting GitHub data">
@@ -216,22 +227,6 @@ function renderLanguageSvg(languageTotals) {
 </svg>\n`;
 }
 
-async function renderGithubSignal(signal) {
-  const now = new Date().toUTCString();
-  return `<table width="100%">
-<tr>
-<td align="center" width="33%"><strong>Public repositories</strong><br/>${signal.publicRepos}</td>
-<td align="center" width="33%"><strong>Followers</strong><br/>${signal.followers}</td>
-<td align="center" width="33%"><strong>Total stars</strong><br/>${signal.totalStars}</td>
-</tr>
-</table>
-
-<strong>Recent public commits:</strong><br/>
-${renderRecentCommits(signal)}
-
-<sub>Auto-refreshed by GitHub Actions · ${now}</sub>`;
-}
-
 async function renderCodingSystem() {
   try {
     const raw = await fs.readFile(codingSystemPath, "utf8");
@@ -248,16 +243,15 @@ async function renderCodingSystem() {
 async function main() {
   console.log("Fetching GitHub signal...");
   const [readme, activityPage, signal] = await Promise.all([fs.readFile(readmePath, "utf8"), fs.readFile(activityPath, "utf8"), getPublicSignal()]);
-  const [aiSnapshot, githubSignal, codingSystem] = await Promise.all([getAiSnapshot(signal), renderGithubSignal(signal), renderCodingSystem()]);
+  const [aiSnapshot, codingSystem] = await Promise.all([getAiSnapshot(signal), renderCodingSystem()]);
 
   let updatedReadme = readme;
-  updatedReadme = replaceBlock(updatedReadme, "AI-SNAPSHOT", aiSnapshot);
-  updatedReadme = replaceBlock(updatedReadme, "GITHUB-SIGNAL", githubSignal);
-  updatedReadme = replaceBlock(updatedReadme, "CODING-SYSTEM", codingSystem);
+  updatedReadme = replaceBlock(updatedReadme, "AI-SNAPSHOT", aiSnapshot, false);
+  updatedReadme = replaceBlock(updatedReadme, "CODING-SYSTEM", codingSystem, false);
 
   await fs.writeFile(languageSvgPath, renderLanguageSvg(signal.languageTotals), "utf8");
   await fs.writeFile(readmePath, updatedReadme, "utf8");
-  const updatedActivity = replaceBlock(activityPage, "GITHUB-SIGNAL", githubSignal);
+  const updatedActivity = replaceBlock(activityPage, "GITHUB-SIGNAL", renderGithubSignal(signal), false);
   await fs.writeFile(activityPath, updatedActivity, "utf8");
   console.log("README, docs activity, and language SVG refreshed.");
 }

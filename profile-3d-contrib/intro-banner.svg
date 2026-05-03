@@ -1,0 +1,38 @@
+<svg width="720" height="148" viewBox="0 0 720 148" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Software engineer building AI systems, developer tools, trading infrastructure, and web products">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#151b23"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="38%" stop-color="#22c55e"/>
+      <stop offset="70%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="720" height="148" rx="18" fill="url(#bg)"/>
+  <circle cx="650" cy="22" r="70" fill="#8b5cf6" opacity="0.10">
+    <animate attributeName="r" values="58;76;58" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="128" r="54" fill="#22c55e" opacity="0.08">
+    <animate attributeName="r" values="45;62;45" dur="5.8s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="28" y="30" width="664" height="5" rx="3" fill="url(#accent)" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="28" y="70" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">I build systems that ship.</text>
+  <text x="28" y="99" fill="#cbd5e1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">AI systems · developer tools · trading infrastructure · production web products</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    <rect x="28" y="113" width="92" height="22" rx="11" fill="#1f2937" stroke="#8b5cf6"/>
+    <text x="46" y="128" fill="#f8fafc">AI systems</text>
+    <rect x="130" y="113" width="116" height="22" rx="11" fill="#1f2937" stroke="#22c55e"/>
+    <text x="148" y="128" fill="#f8fafc">developer tools</text>
+    <rect x="256" y="113" width="158" height="22" rx="11" fill="#1f2937" stroke="#38bdf8"/>
+    <text x="274" y="128" fill="#f8fafc">trading infrastructure</text>
+    <rect x="424" y="113" width="128" height="22" rx="11" fill="#1f2937" stroke="#f59e0b"/>
+    <text x="442" y="128" fill="#f8fafc">web products</text>
+  </g>
+</svg>

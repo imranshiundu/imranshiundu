@@ -1,50 +1,26 @@
 [
   {
-    "name": "AgentPrometheus",
-    "description": "Hierarchical multi-agent system experiment for combining research, coding, planning, and autonomous task execution.",
-    "tags": ["Python", "agents", "automation", "research"],
-    "url": "https://github.com/imranshiundu/AgentPrometheus"
-  },
-  {
-    "name": "C3NTR-L-COMM-ND",
-    "description": "Telegram-based Linux control and automation system for remote operations, self-healing workflows, and system commands.",
-    "tags": ["Python", "Telegram Bot", "Linux", "automation"],
-    "url": "https://github.com/imranshiundu/C3NTR-L-COMM-ND"
+    "name": "Gravity",
+    "description": "AI operating system experiment for local models, memory, coding workflows, defense modules, gateway logic, UI, channels, voice, and business automation.",
+    "tags": ["AI systems", "Ollama", "automation", "developer tools"],
+    "url": "https://github.com/imranshiundu/Gravity"
   },
   {
     "name": "Patricia",
-    "description": "Legal intelligence and case-law audio platform focused on making legal information easier to explore and consume.",
-    "tags": ["TypeScript", "AI", "legal-tech", "audio"],
+    "description": "Legal intelligence and case-law research platform focused on making legal information easier to search, understand, and consume.",
+    "tags": ["TypeScript", "AI", "legal-tech", "research"],
     "url": "https://github.com/imranshiundu/Patricia"
   },
   {
-    "name": "MovieDB",
-    "description": "Spring Boot REST API for movie data management, CRUD operations, filtering, caching, and relationship modeling.",
-    "tags": ["Java", "Spring Boot", "REST API", "backend"],
-    "url": "https://github.com/imranshiundu/MovieDB"
+    "name": "Hoovi",
+    "description": "Movie and media database project built around public data sources, search, discovery, and a better browsing experience.",
+    "tags": ["HTML", "JavaScript", "API integration", "media"],
+    "url": "https://github.com/imranshiundu/Hoovi"
   },
   {
-    "name": "pickup",
-    "description": "A background productivity system designed to reduce interruption recovery cost and help users return to deep work.",
-    "tags": ["Rust", "productivity", "desktop thinking"],
-    "url": "https://github.com/imranshiundu/pickup"
-  },
-  {
-    "name": "population",
-    "description": "Data pipeline and dashboard for exploring age and sex structured population datasets for Kenya and Uganda.",
-    "tags": ["Python", "data pipeline", "analytics", "dashboard"],
-    "url": "https://github.com/imranshiundu/population"
-  },
-  {
-    "name": "Orb21",
-    "description": "A founder-builder execution platform. Mentioned here once because the profile is bigger than one company.",
-    "tags": ["Next.js", "systems", "startup execution"],
-    "url": "https://orb21.com"
-  },
-  {
-    "name": "Portfolio",
-    "description": "My public technical home for projects, experiments, product thinking, and contact.",
-    "tags": ["Next.js", "UI", "personal brand"],
-    "url": "https://imranisdev.top"
+    "name": "Hoo Browser",
+    "description": "Browser experiment focused on a clean browsing interface, web access, local tooling, and product-grade desktop UX.",
+    "tags": ["browser", "UI", "product engineering", "desktop"],
+    "url": "https://github.com/imranshiundu/Hoo-browser"
   }
 ]

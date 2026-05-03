@@ -4,8 +4,8 @@
   <text x="28" y="38" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Language activity</text>
   <text x="28" y="61" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Generated from GitHub public repository language bytes</text>
   <rect x="28" y="82" width="664" height="18" rx="9" fill="#30363d"/>
-  <rect x="28.00" y="82" width="409.65" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
-  <rect x="437.65" y="82" width="143.08" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
+  <rect x="28.00" y="82" width="409.66" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
+  <rect x="437.66" y="82" width="143.07" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
   <rect x="580.73" y="82" width="49.23" height="18" rx="9" fill="#38bdf8"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.88s" repeatCount="indefinite"/></rect>
   <rect x="629.96" y="82" width="21.84" height="18" rx="9" fill="#f59e0b"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.12s" repeatCount="indefinite"/></rect>
   <rect x="651.79" y="82" width="20.27" height="18" rx="9" fill="#ef4444"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.36s" repeatCount="indefinite"/></rect>

@@ -20,18 +20,18 @@ Software engineer building AI systems, developer tools, trading infrastructure, 
 ## Current signal
 
 <!-- GITHUB-SIGNAL:START -->
-<table width="100%">
+<table>
 <tr>
-<td align="center" width="33%"><strong>Public repositories</strong><br/>114</td>
-<td align="center" width="33%"><strong>Followers</strong><br/>26</td>
-<td align="center" width="33%"><strong>Total stars</strong><br/>11</td>
+<td align="center"><strong>Public repositories</strong><br/>114</td>
+<td align="center"><strong>Followers</strong><br/>26</td>
+<td align="center"><strong>Total stars</strong><br/>11</td>
 </tr>
 </table>
 
 <strong>Recent public commits:</strong><br/>
 No recent public commits found.
 
-<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 18:41:19 GMT</sub>
+<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 18:53:10 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ## Language activity
@@ -58,7 +58,7 @@ No recent public commits found.
 ## Operating style
 
 <!-- AI-SNAPSHOT:START -->
-> Software engineer maintaining Hoo-browser and bankingApp repositories with recent commits and updates.
+> Software engineer maintaining Hoo-browser and bankingApp repositories with recent commits.
 <!-- AI-SNAPSHOT:END -->
 
 <!-- CODING-SYSTEM:START -->

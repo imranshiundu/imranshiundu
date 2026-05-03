@@ -13,18 +13,18 @@
 ## 📡 Live Signal
 
 <!-- GITHUB-SIGNAL:START -->
-<table>
+<table width="100%">
 <tr>
-<td align="center"><strong>Public repositories</strong><br/>114</td>
-<td align="center"><strong>Followers</strong><br/>26</td>
-<td align="center"><strong>Total stars</strong><br/>11</td>
+<td align="center" width="33%"><strong>Public repositories</strong><br/>114</td>
+<td align="center" width="33%"><strong>Followers</strong><br/>26</td>
+<td align="center" width="33%"><strong>Total stars</strong><br/>11</td>
 </tr>
 </table>
 
 <strong>Recent public commits:</strong><br/>
 No recent public commits found.
 
-<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 18:53:10 GMT</sub>
+<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 18:53:56 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ---

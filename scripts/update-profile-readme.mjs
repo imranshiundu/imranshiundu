@@ -8,6 +8,9 @@ const groqModel = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
 const readmePath = new URL("../README.md", import.meta.url);
 const activityPath = new URL("../docs/GITHUB_ACTIVITY.md", import.meta.url);
 const codingSystemPath = new URL("../docs/CODING_SYSTEM.md", import.meta.url);
+const languageSvgPath = new URL("../profile-3d-contrib/language-pulse.svg", import.meta.url);
+
+const languagePalette = ["#8b5cf6", "#22c55e", "#38bdf8", "#f59e0b", "#ef4444", "#a855f7", "#14b8a6"];
 
 async function fetchWithTimeout(url, options = {}, timeoutMs = 14000) {
   const ctrl = new AbortController();
@@ -51,12 +54,24 @@ async function githubFetch(path) {
   return res.json();
 }
 
-function cleanLanguageList(topLangs) {
-  return topLangs || "Unavailable";
-}
-
 function sentenceCaseList(items) {
   return items.length > 0 ? items.join(", ") : "Building in private";
+}
+
+function escapeXml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+async function getRepoLanguages(repoName) {
+  try {
+    return await githubFetch(`/repos/${username}/${repoName}/languages`);
+  } catch {
+    return {};
+  }
 }
 
 async function getPublicSignal() {
@@ -70,16 +85,15 @@ async function getPublicSignal() {
     const ownRepos = repos.filter((repo) => !repo.fork && !repo.private);
     const totalStars = ownRepos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
 
-    const langMap = {};
-    ownRepos.forEach((repo) => {
-      if (repo.language) langMap[repo.language] = (langMap[repo.language] || 0) + 1;
-    });
+    const languageTotals = {};
+    const languageRepos = ownRepos.slice(0, 80);
+    const languageResults = await Promise.all(languageRepos.map((repo) => getRepoLanguages(repo.name)));
 
-    const topLangs = Object.entries(langMap)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 5)
-      .map(([language]) => language)
-      .join(" · ");
+    languageResults.forEach((languageMap) => {
+      Object.entries(languageMap).forEach(([language, bytes]) => {
+        languageTotals[language] = (languageTotals[language] || 0) + bytes;
+      });
+    });
 
     const pushEvents = events.filter((event) =>
       event.type === "PushEvent" &&
@@ -111,7 +125,7 @@ async function getPublicSignal() {
       publicRepos: user.public_repos,
       followers: user.followers,
       totalStars,
-      topLangs: cleanLanguageList(topLangs),
+      languageTotals,
       recentCommits,
       activeRepos
     };
@@ -121,7 +135,7 @@ async function getPublicSignal() {
       publicRepos: "Unavailable",
       followers: "Unavailable",
       totalStars: "Unavailable",
-      topLangs: "Unavailable",
+      languageTotals: {},
       recentCommits: [],
       activeRepos: []
     };
@@ -162,29 +176,11 @@ async function getAiSnapshot(signal) {
   const fallback = `> Building and shipping updates across ${sentenceCaseList(signal.activeRepos)}.`;
 
   const result = await groqComplete(
-    "Write one factual GitHub profile status line. Max 22 words. No emojis. No hype. Do not call the developer a founder. No quotes.",
-    `Developer: Imran Shiundu. Software engineer from Kenya. Active repositories: ${signal.activeRepos.join(", ")}. Recent commits: ${signal.recentCommits.map((commit) => commit.message).slice(0, 4).join(" | ")}. Write one current status line.`
+    "Write one factual GitHub profile status line. Max 22 words. No emojis. No hype. Do not call the developer a founder. Do not mention location. No quotes.",
+    `Developer: Imran Shiundu. Software engineer. Active repositories: ${signal.activeRepos.join(", ")}. Recent commits: ${signal.recentCommits.map((commit) => commit.message).slice(0, 4).join(" | ")}. Write one current status line.`
   );
 
   return result ? `> ${result.replace(/^>\s*/, "")}` : fallback;
-}
-
-async function getAiCurrentFocus(signal) {
-  if (signal.recentCommits.length === 0) {
-    return `<strong>Current focus:</strong> ${sentenceCaseList(signal.activeRepos)}`;
-  }
-
-  const commitSummary = signal.recentCommits
-    .slice(0, 6)
-    .map((commit) => `[${commit.repo}] ${commit.message}`)
-    .join("\n");
-
-  const result = await groqComplete(
-    "Analyze commit history and write one factual current-focus line. Max 20 words. No emojis. No hype. Do not call the developer a founder.",
-    `Commits:\n${commitSummary}\n\nWrite the current focus.`
-  );
-
-  return `<strong>Current focus:</strong> ${result || sentenceCaseList(signal.activeRepos)}`;
 }
 
 function renderRecentCommits(signal) {
@@ -198,20 +194,68 @@ function renderRecentCommits(signal) {
     .join("<br/>\n");
 }
 
+function renderLanguageSvg(languageTotals) {
+  const entries = Object.entries(languageTotals)
+    .filter(([, bytes]) => bytes > 0)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6);
+
+  const safeEntries = entries.length > 0 ? entries : [["JavaScript", 1], ["Python", 1], ["TypeScript", 1]];
+  const total = safeEntries.reduce((sum, [, bytes]) => sum + bytes, 0);
+
+  let x = 28;
+  const barY = 82;
+  const barHeight = 18;
+  const barWidth = 664;
+
+  const segments = safeEntries.map(([language, bytes], index) => {
+    const width = Math.max((bytes / total) * barWidth, index === safeEntries.length - 1 ? 0 : 18);
+    const segment = `<rect x="${x.toFixed(2)}" y="${barY}" width="${width.toFixed(2)}" height="${barHeight}" rx="9" fill="${languagePalette[index % languagePalette.length]}">
+      <animate attributeName="opacity" values="0.72;1;0.72" dur="${(2.4 + index * 0.24).toFixed(2)}s" repeatCount="indefinite"/>
+    </rect>`;
+    x += width;
+    return segment;
+  }).join("\n  ");
+
+  const labels = safeEntries.map(([language, bytes], index) => {
+    const pct = Math.round((bytes / total) * 100);
+    const labelX = 30 + (index % 3) * 210;
+    const labelY = 124 + Math.floor(index / 3) * 18;
+    return `<g>
+      <circle cx="${labelX}" cy="${labelY - 4}" r="4" fill="${languagePalette[index % languagePalette.length]}"/>
+      <text x="${labelX + 10}" y="${labelY}" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">${escapeXml(language)} ${pct}%</text>
+    </g>`;
+  }).join("\n  ");
+
+  return `<svg width="720" height="160" viewBox="0 0 720 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language activity generated from public repository language data">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="160" rx="18" fill="url(#bg)"/>
+  <text x="28" y="38" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Language activity</text>
+  <text x="28" y="61" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Generated from public repository language data</text>
+  <rect x="28" y="82" width="664" height="18" rx="9" fill="#30363d"/>
+  ${segments}
+  ${labels}
+</svg>
+`;
+}
+
 async function renderGithubSignal(signal) {
   const now = new Date().toUTCString();
-  const currentFocus = await getAiCurrentFocus(signal);
+  const currentFocus = sentenceCaseList(signal.activeRepos);
 
   return `<table>
 <tr>
 <td align="center"><strong>Public repositories</strong><br/>${signal.publicRepos}</td>
 <td align="center"><strong>Followers</strong><br/>${signal.followers}</td>
 <td align="center"><strong>Total stars</strong><br/>${signal.totalStars}</td>
-<td align="center"><strong>Top languages</strong><br/>${signal.topLangs}</td>
+<td align="center"><strong>Current focus</strong><br/>${currentFocus}</td>
 </tr>
 </table>
-
-${currentFocus}
 
 <strong>Recent public commits:</strong><br/>
 ${renderRecentCommits(signal)}
@@ -253,8 +297,9 @@ async function main() {
   updatedReadme = replaceBlock(updatedReadme, "GITHUB-SIGNAL", githubSignal);
   updatedReadme = replaceBlock(updatedReadme, "CODING-SYSTEM", codingSystem);
 
+  await fs.writeFile(languageSvgPath, renderLanguageSvg(signal.languageTotals), "utf8");
   await fs.writeFile(readmePath, updatedReadme, "utf8");
-  console.log("README.md refreshed.");
+  console.log("README.md and language SVG refreshed.");
 
   const updatedActivity = replaceBlock(activityPage, "GITHUB-SIGNAL", githubSignal);
   await fs.writeFile(activityPath, updatedActivity, "utf8");

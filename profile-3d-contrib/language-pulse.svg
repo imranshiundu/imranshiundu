@@ -1,28 +1,19 @@
-<svg width="720" height="150" viewBox="0 0 720 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language activity">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
-    </linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8b5cf6"/>
-      <stop offset="45%" stop-color="#22c55e"/>
-      <stop offset="75%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
-    </linearGradient>
-  </defs>
-  <rect width="720" height="150" rx="18" fill="url(#bg)"/>
-  <text x="30" y="38" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Language activity</text>
-  <text x="30" y="61" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Auto-generated from public repository language data</text>
-  <rect x="30" y="84" width="660" height="18" rx="9" fill="#30363d"/>
-  <rect x="30" y="84" width="520" height="18" rx="9" fill="url(#bar)">
-    <animate attributeName="opacity" values="0.72;1;0.72" dur="2.8s" repeatCount="indefinite"/>
-  </rect>
-  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#e2e8f0">
-    <text x="30" y="128">JavaScript</text>
-    <text x="145" y="128">HTML</text>
-    <text x="225" y="128">Python</text>
-    <text x="315" y="128">TypeScript</text>
-    <text x="430" y="128">Java</text>
-  </g>
+<svg width="720" height="160" viewBox="0 0 720 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language activity generated from public repository language data">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#161b22"/></linearGradient></defs>
+  <rect width="720" height="160" rx="18" fill="url(#bg)"/>
+  <text x="28" y="38" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Language activity</text>
+  <text x="28" y="61" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Generated from GitHub public repository language bytes</text>
+  <rect x="28" y="82" width="664" height="18" rx="9" fill="#30363d"/>
+  <rect x="28.00" y="82" width="409.65" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
+  <rect x="437.65" y="82" width="143.08" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
+  <rect x="580.73" y="82" width="49.23" height="18" rx="9" fill="#38bdf8"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.88s" repeatCount="indefinite"/></rect>
+  <rect x="629.96" y="82" width="21.84" height="18" rx="9" fill="#f59e0b"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.12s" repeatCount="indefinite"/></rect>
+  <rect x="651.79" y="82" width="20.27" height="18" rx="9" fill="#ef4444"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.36s" repeatCount="indefinite"/></rect>
+  <rect x="672.06" y="82" width="19.94" height="18" rx="9" fill="#a855f7"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.60s" repeatCount="indefinite"/></rect>
+  <g><circle cx="30" cy="120" r="4" fill="#8b5cf6"/><text x="40" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">TypeScript 62%</text></g>
+  <g><circle cx="240" cy="120" r="4" fill="#22c55e"/><text x="250" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Python 22%</text></g>
+  <g><circle cx="450" cy="120" r="4" fill="#38bdf8"/><text x="460" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Go 7%</text></g>
+  <g><circle cx="30" cy="138" r="4" fill="#f59e0b"/><text x="40" y="142" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">C 3%</text></g>
+  <g><circle cx="240" cy="138" r="4" fill="#ef4444"/><text x="250" y="142" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Swift 3%</text></g>
+  <g><circle cx="450" cy="138" r="4" fill="#a855f7"/><text x="460" y="142" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Rust 3%</text></g>
 </svg>

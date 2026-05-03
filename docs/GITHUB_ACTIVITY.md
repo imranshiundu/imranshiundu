@@ -13,19 +13,18 @@
 ## 📡 Live Signal
 
 <!-- GITHUB-SIGNAL:START -->
-<table><tr>
-<td align="center"><b>📦 Public Repos</b><br/><b>114</b></td>
-<td align="center"><b>👥 Followers</b><br/><b>26</b></td>
-<td align="center"><b>⭐ Total Stars</b><br/><b>11</b></td>
-<td align="center"><b>🔤 Top Languages</b><br/>`JavaScript` · `HTML` · `Python` · `TypeScript` · `Java`</td>
-</tr></table>
+<table>
+<tr>
+<td align="center"><strong>Public repositories</strong><br/>114</td>
+<td align="center"><strong>Followers</strong><br/>26</td>
+<td align="center"><strong>Total stars</strong><br/>11</td>
+</tr>
+</table>
 
-**Currently active on:** Hoo-browser, bankingApp
+<strong>Recent public commits:</strong><br/>
+No recent public commits found.
 
-**📬 Recent commits:**
-- No recent public commits found
-
-<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 17:59:24 GMT</sub>
+<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 18:41:19 GMT</sub>
 <!-- GITHUB-SIGNAL:END -->
 
 ---

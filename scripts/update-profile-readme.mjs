@@ -218,11 +218,11 @@ function renderLanguageSvg(languageTotals) {
 
 async function renderGithubSignal(signal) {
   const now = new Date().toUTCString();
-  return `<table>
+  return `<table width="100%">
 <tr>
-<td align="center"><strong>Public repositories</strong><br/>${signal.publicRepos}</td>
-<td align="center"><strong>Followers</strong><br/>${signal.followers}</td>
-<td align="center"><strong>Total stars</strong><br/>${signal.totalStars}</td>
+<td align="center" width="33%"><strong>Public repositories</strong><br/>${signal.publicRepos}</td>
+<td align="center" width="33%"><strong>Followers</strong><br/>${signal.followers}</td>
+<td align="center" width="33%"><strong>Total stars</strong><br/>${signal.totalStars}</td>
 </tr>
 </table>
 

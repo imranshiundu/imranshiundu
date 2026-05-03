@@ -6,19 +6,25 @@ Software engineer building AI systems, developer tools, trading infrastructure, 
 
 ## Skills
 
-**Frontend:** Next.js, React, TypeScript, Tailwind CSS  
-**Backend:** Java, Spring Boot, Node.js, REST APIs, PostgreSQL  
-**Systems:** Python, Docker, Nginx, GitHub Actions, Ubuntu, automation  
-**AI engineering:** LLM integration, local models, retrieval flows, agent workflows, tool orchestration
+<table width="100%">
+<tr>
+<td width="50%"><strong>Frontend</strong><br/>Next.js · React · TypeScript · Tailwind CSS</td>
+<td width="50%"><strong>Backend</strong><br/>Java · Spring Boot · Node.js · REST APIs · PostgreSQL</td>
+</tr>
+<tr>
+<td width="50%"><strong>Systems</strong><br/>Python · Docker · Nginx · GitHub Actions · Ubuntu · automation</td>
+<td width="50%"><strong>AI engineering</strong><br/>LLM integration · local models · retrieval flows · agent workflows · tool orchestration</td>
+</tr>
+</table>
 
 ## Current signal
 
 <!-- GITHUB-SIGNAL:START -->
-<table>
+<table width="100%">
 <tr>
-<td align="center"><strong>Public repositories</strong><br/>114</td>
-<td align="center"><strong>Followers</strong><br/>26</td>
-<td align="center"><strong>Total stars</strong><br/>11</td>
+<td align="center" width="33%"><strong>Public repositories</strong><br/>114</td>
+<td align="center" width="33%"><strong>Followers</strong><br/>26</td>
+<td align="center" width="33%"><strong>Total stars</strong><br/>11</td>
 </tr>
 </table>
 
@@ -30,7 +36,7 @@ No recent public commits found.
 
 ## Language activity
 
-<img src="./profile-3d-contrib/language-pulse.svg" width="520" alt="Language activity generated from public repository language data" />
+<img src="./profile-3d-contrib/language-pulse.svg" width="100%" alt="Language activity generated from public repository language data" />
 
 ## Contribution graph
 
@@ -38,10 +44,16 @@ No recent public commits found.
 
 ## What I build
 
-- AI assistants and agent systems for research, coding, automation, and operations.
-- Trading and backtesting infrastructure with risk controls, execution logic, and reporting.
-- Web products with strong UX, practical admin flows, dashboards, and production documentation.
-- Backend systems, APIs, scripts, internal tools, and deployment workflows.
+<table width="100%">
+<tr>
+<td width="50%"><strong>AI systems</strong><br/>Assistants, agents, research flows, coding workflows, automation, and operations tooling.</td>
+<td width="50%"><strong>Trading infrastructure</strong><br/>Backtesting systems, risk controls, execution logic, reporting, and strategy validation.</td>
+</tr>
+<tr>
+<td width="50%"><strong>Web products</strong><br/>UX-focused apps, dashboards, admin flows, booking systems, and production documentation.</td>
+<td width="50%"><strong>Backend tools</strong><br/>APIs, scripts, internal tools, deployment workflows, and maintainable system foundations.</td>
+</tr>
+</table>
 
 ## Operating style
 

@@ -6,33 +6,7 @@ Software engineer building AI systems, developer tools, trading infrastructure, 
 
 ## Skills
 
-<table width="100%">
-<tr>
-<td width="50%"><strong>Frontend</strong><br/>Next.js · React · TypeScript · Tailwind CSS</td>
-<td width="50%"><strong>Backend</strong><br/>Java · Spring Boot · Node.js · REST APIs · PostgreSQL</td>
-</tr>
-<tr>
-<td width="50%"><strong>Systems</strong><br/>Python · Docker · Nginx · GitHub Actions · Ubuntu · automation</td>
-<td width="50%"><strong>AI engineering</strong><br/>LLM integration · local models · retrieval flows · agent workflows · tool orchestration</td>
-</tr>
-</table>
-
-## Current signal
-
-<!-- GITHUB-SIGNAL:START -->
-<table width="100%">
-<tr>
-<td align="center" width="33%"><strong>Public repositories</strong><br/>114</td>
-<td align="center" width="33%"><strong>Followers</strong><br/>26</td>
-<td align="center" width="33%"><strong>Total stars</strong><br/>11</td>
-</tr>
-</table>
-
-<strong>Recent public commits:</strong><br/>
-No recent public commits found.
-
-<sub>Auto-refreshed by GitHub Actions · Sun, 03 May 2026 18:53:56 GMT</sub>
-<!-- GITHUB-SIGNAL:END -->
+<img src="./profile-3d-contrib/skills-flow.svg" width="100%" alt="Animated skills flow" />
 
 ## Language activity
 
@@ -66,11 +40,3 @@ Define one useful outcome. Build the smallest working improvement. Test the beha
 
 [Read the full coding system](./docs/CODING_SYSTEM.md)
 <!-- CODING-SYSTEM:END -->
-
-## Contact
-
-Open to serious product work, technical collaboration, software engineering opportunities, and practical systems work.
-
-Website: [imranisdev.top](https://imranisdev.top)  
-Email: [imranshiundu@gmail.com](mailto:imranshiundu@gmail.com)  
-LinkedIn: [linkedin.com/in/imranshiundu](https://linkedin.com/in/imranshiundu)

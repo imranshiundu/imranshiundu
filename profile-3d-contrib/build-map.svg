@@ -14,7 +14,7 @@
       .title{font:800 22px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc;letter-spacing:-.35px}
       .lead{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}
       .cardTitle{font:800 14px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
-      .cardText{font:500 11.5px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}
+      .cardText{font:500 10.8px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}
       .index{font:800 10px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
       .caption{font:700 10.5px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8;letter-spacing:.13em}
     </style>
@@ -46,7 +46,7 @@
     <rect x="14" y="13" width="30" height="18" rx="9" fill="#22c55e" fill-opacity=".14" stroke="#22c55e" stroke-opacity=".5"/>
     <text class="index" x="20" y="26">02</text>
     <text class="cardTitle" x="58" y="19">Trading infrastructure</text>
-    <text class="cardText" x="58" y="35">backtesting · risk controls · execution · reporting</text>
+    <text class="cardText" x="58" y="35">backtesting · risk controls · execution · reports</text>
   </g>
 
   <g transform="translate(32 194)">
@@ -54,7 +54,7 @@
     <rect x="14" y="13" width="30" height="18" rx="9" fill="#38bdf8" fill-opacity=".14" stroke="#38bdf8" stroke-opacity=".5"/>
     <text class="index" x="20" y="26">03</text>
     <text class="cardTitle" x="58" y="19">Web products</text>
-    <text class="cardText" x="58" y="35">dashboards · portals · admin systems · polished UX</text>
+    <text class="cardText" x="58" y="35">dashboards · portals · admin systems · UX</text>
   </g>
 
   <g transform="translate(372 194)">
@@ -62,6 +62,6 @@
     <rect x="14" y="13" width="30" height="18" rx="9" fill="#f59e0b" fill-opacity=".14" stroke="#f59e0b" stroke-opacity=".55"/>
     <text class="index" x="20" y="26">04</text>
     <text class="cardTitle" x="58" y="19">Backend platforms</text>
-    <text class="cardText" x="58" y="35">APIs · databases · internal tools · deployment systems</text>
+    <text class="cardText" x="58" y="35">APIs · databases · internal tools · deploys</text>
   </g>
 </svg>

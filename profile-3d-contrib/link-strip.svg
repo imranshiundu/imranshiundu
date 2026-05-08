@@ -1,5 +1,10 @@
-<svg width="720" height="64" viewBox="0 0 720 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile links">
+<svg width="720" height="66" viewBox="0 0 720 66" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile links">
   <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
     <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#a855f7"/>
       <stop offset="45%" stop-color="#38bdf8"/>
@@ -10,28 +15,32 @@
     </style>
   </defs>
 
-  <rect width="720" height="64" rx="18" fill="#0d1117" opacity="0"/>
+  <rect width="720" height="66" rx="18" fill="#0d1117" opacity="0"/>
 
-  <g transform="translate(36 10)">
+  <g transform="translate(58 10)">
     <a href="https://imranisdev.top" target="_blank">
-      <rect width="138" height="34" rx="17" fill="#111827" stroke="#a855f7" stroke-opacity=".9"/>
-      <text class="label" x="43" y="22">Website</text>
+      <rect width="132" height="36" rx="12" fill="#0f172a" stroke="#a855f7" stroke-opacity=".95"/>
+      <rect x="1" y="1" width="130" height="34" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+      <text class="label" x="40" y="23">Website</text>
     </a>
     <a href="https://linkedin.com/in/imranshiundu" target="_blank">
-      <rect x="170" width="138" height="34" rx="17" fill="#111827" stroke="#22c55e" stroke-opacity=".85"/>
-      <text class="label" x="215" y="22">LinkedIn</text>
+      <rect x="158" width="132" height="36" rx="12" fill="#0f172a" stroke="#22c55e" stroke-opacity=".85"/>
+      <rect x="159" y="1" width="130" height="34" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+      <text class="label" x="200" y="23">LinkedIn</text>
     </a>
     <a href="https://github.com/imranshiundu" target="_blank">
-      <rect x="340" width="138" height="34" rx="17" fill="#111827" stroke="#38bdf8" stroke-opacity=".85"/>
-      <text class="label" x="389" y="22">GitHub</text>
+      <rect x="316" width="132" height="36" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".9"/>
+      <rect x="317" y="1" width="130" height="34" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+      <text class="label" x="363" y="23">GitHub</text>
     </a>
     <a href="mailto:imranshiundu@gmail.com" target="_blank">
-      <rect x="510" width="138" height="34" rx="17" fill="#111827" stroke="#f59e0b" stroke-opacity=".9"/>
-      <text class="label" x="560" y="22">Email</text>
+      <rect x="474" width="132" height="36" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".95"/>
+      <rect x="475" y="1" width="130" height="34" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+      <text class="label" x="521" y="23">Email</text>
     </a>
   </g>
 
-  <rect x="36" y="54" width="648" height="2" rx="1" fill="url(#line)" opacity=".75">
-    <animate attributeName="opacity" values=".45;.9;.45" dur="4s" repeatCount="indefinite"/>
+  <rect x="58" y="56" width="606" height="2" rx="1" fill="url(#line)" opacity=".7">
+    <animate attributeName="opacity" values=".45;.88;.45" dur="4s" repeatCount="indefinite"/>
   </rect>
 </svg>

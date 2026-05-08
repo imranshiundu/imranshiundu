@@ -12,10 +12,10 @@
     </linearGradient>
     <style>
       .title{font:800 22px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc;letter-spacing:-.3px}
-      .lead{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}
+      .lead{font:600 13px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}
       .cardTitle{font:800 13px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
-      .cardText{font:500 11px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}
-      .stack{font:700 10.5px Inter,Segoe UI,Arial,sans-serif;fill:#dbeafe}
+      .cardText{font:600 11px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}
+      .stack{font:800 10.5px Inter,Segoe UI,Arial,sans-serif;fill:#dbeafe}
     </style>
   </defs>
 
@@ -29,32 +29,32 @@
       <animate attributeName="opacity" values=".62;1;.62" dur="4s" repeatCount="indefinite"/>
     </rect>
 
-    <text class="title" x="30" y="66">Engineering strengths</text>
-    <text class="lead" x="30" y="90">Full-stack execution for products that need speed, reliability, and real-world business value.</text>
+    <text class="title" x="30" y="66">Core strengths</text>
+    <text class="lead" x="30" y="90">I build fast, reliable products with clean UI, solid backend logic, and sharp execution.</text>
 
     <g transform="translate(30 116)">
       <rect width="205" height="78" rx="16" fill="#0f172a" stroke="#a855f7" stroke-opacity=".55"/>
-      <text class="cardTitle" x="18" y="25">Product engineering</text>
-      <text class="cardText" x="18" y="45">Production-ready web apps, MVPs,</text>
-      <text class="cardText" x="18" y="61">dashboards, portals, and interfaces.</text>
+      <text class="cardTitle" x="18" y="25">Web apps</text>
+      <text class="cardText" x="18" y="45">Dashboards, portals, MVPs,</text>
+      <text class="cardText" x="18" y="61">admin panels, and product UI.</text>
       <text class="stack" x="18" y="92" display="none">Next.js TypeScript React Tailwind</text>
     </g>
 
     <g transform="translate(258 116)">
       <rect width="205" height="78" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".55"/>
-      <text class="cardTitle" x="18" y="25">Systems architecture</text>
-      <text class="cardText" x="18" y="45">APIs, databases, backends, audits,</text>
-      <text class="cardText" x="18" y="61">refactors, scaling, and performance.</text>
+      <text class="cardTitle" x="18" y="25">Backend systems</text>
+      <text class="cardText" x="18" y="45">APIs, databases, auth, jobs,</text>
+      <text class="cardText" x="18" y="61">audits, scaling, and deploys.</text>
     </g>
 
     <g transform="translate(486 116)">
       <rect width="204" height="78" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".55"/>
-      <text class="cardTitle" x="18" y="25">Applied intelligence</text>
-      <text class="cardText" x="18" y="45">AI workflows, automation, research,</text>
-      <text class="cardText" x="18" y="61">legal, finance, and market systems.</text>
+      <text class="cardTitle" x="18" y="25">AI and markets</text>
+      <text class="cardText" x="18" y="45">Agents, automation, research,</text>
+      <text class="cardText" x="18" y="61">trading tools, and workflows.</text>
     </g>
 
-    <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">
+    <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="800">
       <rect x="30" y="205" width="90" height="1.5" rx="1" fill="#a855f7"/>
       <text x="130" y="209" fill="#cbd5e1">Next.js</text>
       <text x="190" y="209" fill="#cbd5e1">TypeScript</text>

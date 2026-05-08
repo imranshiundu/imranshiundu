@@ -1,8 +1,8 @@
-<svg width="720" height="232" viewBox="0 0 720 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What I build: production software, AI systems, trading infrastructure, and backend platforms">
+<svg width="720" height="250" viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What I build: production software, AI systems, trading infrastructure, web products, and backend platforms">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0b0f19"/>
-      <stop offset="56%" stop-color="#111827"/>
+      <stop offset="55%" stop-color="#111827"/>
       <stop offset="100%" stop-color="#15111f"/>
     </linearGradient>
     <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
@@ -15,51 +15,53 @@
       .lead{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}
       .cardTitle{font:800 14px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
       .cardText{font:500 11.5px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}
-      .index{font:800 10px Inter,Segoe UI,Arial,sans-serif;fill:#0b0f19}
+      .index{font:800 10px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
+      .caption{font:700 10.5px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8;letter-spacing:.13em}
     </style>
   </defs>
 
-  <rect width="720" height="232" rx="22" fill="url(#bg)"/>
-  <rect x="1" y="1" width="718" height="230" rx="21" fill="none" stroke="#334155" stroke-opacity=".45"/>
-  <circle cx="642" cy="40" r="82" fill="#8b5cf6" opacity=".10"/>
-  <circle cx="76" cy="218" r="68" fill="#38bdf8" opacity=".052"/>
+  <rect width="720" height="250" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="718" height="248" rx="23" fill="none" stroke="#334155" stroke-opacity=".45"/>
+  <circle cx="642" cy="38" r="84" fill="#8b5cf6" opacity=".09"/>
+  <circle cx="68" cy="232" r="70" fill="#38bdf8" opacity=".05"/>
 
-  <rect x="30" y="30" width="660" height="3" rx="2" fill="url(#line)" opacity=".88">
-    <animate attributeName="opacity" values=".58;.95;.58" dur="4.2s" repeatCount="indefinite"/>
+  <rect x="32" y="32" width="656" height="3" rx="2" fill="url(#line)" opacity=".82">
+    <animate attributeName="opacity" values=".55;.92;.55" dur="4.2s" repeatCount="indefinite"/>
   </rect>
 
-  <text class="title" x="30" y="66">What I build</text>
-  <text class="lead" x="30" y="90">Software that turns complex work into clear, usable systems.</text>
+  <text class="caption" x="32" y="62">BUILD MAP</text>
+  <text class="title" x="32" y="88">What I build</text>
+  <text class="lead" x="32" y="112">Focused software systems for intelligence, markets, operations, and product teams.</text>
 
-  <g transform="translate(30 116)">
-    <rect width="315" height="42" rx="14" fill="#0f172a" stroke="#a855f7" stroke-opacity=".55"/>
-    <circle cx="24" cy="21" r="10" fill="#a855f7" opacity=".95"/>
-    <text class="index" x="18.5" y="24.5">01</text>
-    <text class="cardTitle" x="48" y="18">AI systems</text>
-    <text class="cardText" x="48" y="34">assistants · agents · research workflows · automation</text>
+  <g transform="translate(32 138)">
+    <rect width="316" height="44" rx="13" fill="#0f172a" stroke="#a855f7" stroke-opacity=".48"/>
+    <rect x="14" y="13" width="30" height="18" rx="9" fill="#a855f7" fill-opacity=".16" stroke="#a855f7" stroke-opacity=".55"/>
+    <text class="index" x="20" y="26">01</text>
+    <text class="cardTitle" x="58" y="19">AI systems</text>
+    <text class="cardText" x="58" y="35">assistants · agents · research flows · automation</text>
   </g>
 
-  <g transform="translate(375 116)">
-    <rect width="315" height="42" rx="14" fill="#0f172a" stroke="#22c55e" stroke-opacity=".52"/>
-    <circle cx="24" cy="21" r="10" fill="#22c55e" opacity=".95"/>
-    <text class="index" x="18" y="24.5">02</text>
-    <text class="cardTitle" x="48" y="18">Trading infrastructure</text>
-    <text class="cardText" x="48" y="34">backtesting · risk controls · execution · reporting</text>
+  <g transform="translate(372 138)">
+    <rect width="316" height="44" rx="13" fill="#0f172a" stroke="#22c55e" stroke-opacity=".44"/>
+    <rect x="14" y="13" width="30" height="18" rx="9" fill="#22c55e" fill-opacity=".14" stroke="#22c55e" stroke-opacity=".5"/>
+    <text class="index" x="20" y="26">02</text>
+    <text class="cardTitle" x="58" y="19">Trading infrastructure</text>
+    <text class="cardText" x="58" y="35">backtesting · risk controls · execution · reporting</text>
   </g>
 
-  <g transform="translate(30 172)">
-    <rect width="315" height="42" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".52"/>
-    <circle cx="24" cy="21" r="10" fill="#38bdf8" opacity=".95"/>
-    <text class="index" x="18" y="24.5">03</text>
-    <text class="cardTitle" x="48" y="18">Web products</text>
-    <text class="cardText" x="48" y="34">dashboards · portals · admin systems · polished UX</text>
+  <g transform="translate(32 194)">
+    <rect width="316" height="44" rx="13" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".46"/>
+    <rect x="14" y="13" width="30" height="18" rx="9" fill="#38bdf8" fill-opacity=".14" stroke="#38bdf8" stroke-opacity=".5"/>
+    <text class="index" x="20" y="26">03</text>
+    <text class="cardTitle" x="58" y="19">Web products</text>
+    <text class="cardText" x="58" y="35">dashboards · portals · admin systems · polished UX</text>
   </g>
 
-  <g transform="translate(375 172)">
-    <rect width="315" height="42" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".58"/>
-    <circle cx="24" cy="21" r="10" fill="#f59e0b" opacity=".95"/>
-    <text class="index" x="18" y="24.5">04</text>
-    <text class="cardTitle" x="48" y="18">Backend platforms</text>
-    <text class="cardText" x="48" y="34">APIs · databases · internal tools · deployment systems</text>
+  <g transform="translate(372 194)">
+    <rect width="316" height="44" rx="13" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".5"/>
+    <rect x="14" y="13" width="30" height="18" rx="9" fill="#f59e0b" fill-opacity=".14" stroke="#f59e0b" stroke-opacity=".55"/>
+    <text class="index" x="20" y="26">04</text>
+    <text class="cardTitle" x="58" y="19">Backend platforms</text>
+    <text class="cardText" x="58" y="35">APIs · databases · internal tools · deployment systems</text>
   </g>
 </svg>

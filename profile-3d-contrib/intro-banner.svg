@@ -1,4 +1,4 @@
-<svg width="720" height="168" viewBox="0 0 720 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Imran Shiundu. Useful software systems.">
+<svg width="720" height="148" viewBox="0 0 720 148" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Imran Shiundu. Useful software systems.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0b0f19"/>
@@ -18,31 +18,21 @@
       .eyebrow{font:700 11px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8;letter-spacing:.18em}
       .title{font:800 30px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc;letter-spacing:-.65px}
       .sub{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}
-      .tag{font:700 12px Inter,Segoe UI,Arial,sans-serif;fill:#e5e7eb}
     </style>
   </defs>
 
-  <rect width="720" height="168" rx="24" fill="url(#bg)"/>
-  <rect x="1" y="1" width="718" height="166" rx="23" fill="none" stroke="#334155" stroke-opacity=".45"/>
+  <rect width="720" height="148" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="718" height="146" rx="23" fill="none" stroke="#334155" stroke-opacity=".45"/>
 
-  <circle cx="645" cy="30" r="72" fill="#8b5cf6" opacity=".12"/>
-  <circle cx="72" cy="150" r="58" fill="#38bdf8" opacity=".055"/>
-  <path d="M560 38c44 12 78 42 101 84" fill="none" stroke="#a855f7" stroke-width="24" stroke-linecap="round" opacity=".12"/>
+  <circle cx="645" cy="28" r="72" fill="#8b5cf6" opacity=".12"/>
+  <circle cx="72" cy="140" r="54" fill="#38bdf8" opacity=".05"/>
+  <path d="M560 36c44 12 78 42 101 84" fill="none" stroke="#a855f7" stroke-width="24" stroke-linecap="round" opacity=".11"/>
 
   <rect x="36" y="34" width="648" height="4" rx="2" fill="url(#accent)" filter="url(#softGlow)">
     <animate attributeName="opacity" values=".72;1;.72" dur="3.8s" repeatCount="indefinite"/>
   </rect>
 
-  <text class="eyebrow" x="36" y="67">IMRAN SHIUNDU</text>
-  <text class="title" x="36" y="105">Useful software systems.</text>
+  <text class="eyebrow" x="36" y="70">IMRAN SHIUNDU</text>
+  <text class="title" x="36" y="108">Useful software systems.</text>
   <text class="sub" x="36" y="132">Intelligence, infrastructure, markets, interfaces, automation.</text>
-
-  <g transform="translate(36 146)">
-    <circle cx="4" cy="0" r="3" fill="#a855f7"/>
-    <text class="tag" x="16" y="4">systems</text>
-    <circle cx="96" cy="0" r="3" fill="#38bdf8"/>
-    <text class="tag" x="108" y="4">interfaces</text>
-    <circle cx="204" cy="0" r="3" fill="#f59e0b"/>
-    <text class="tag" x="216" y="4">markets</text>
-  </g>
 </svg>

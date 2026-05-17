@@ -4,12 +4,12 @@
   <text x="28" y="38" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Language activity</text>
   <text x="28" y="61" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Generated from GitHub public repository language bytes</text>
   <rect x="28" y="82" width="664" height="18" rx="9" fill="#30363d"/>
-  <rect x="28.00" y="82" width="406.20" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
-  <rect x="434.20" y="82" width="141.32" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
-  <rect x="575.52" y="82" width="48.59" height="18" rx="9" fill="#38bdf8"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.88s" repeatCount="indefinite"/></rect>
-  <rect x="624.11" y="82" width="26.28" height="18" rx="9" fill="#f59e0b"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.12s" repeatCount="indefinite"/></rect>
-  <rect x="650.39" y="82" width="21.56" height="18" rx="9" fill="#ef4444"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.36s" repeatCount="indefinite"/></rect>
-  <rect x="671.95" y="82" width="20.05" height="18" rx="9" fill="#a855f7"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.60s" repeatCount="indefinite"/></rect>
+  <rect x="28.00" y="82" width="406.67" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
+  <rect x="434.67" y="82" width="141.19" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
+  <rect x="575.86" y="82" width="48.45" height="18" rx="9" fill="#38bdf8"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.88s" repeatCount="indefinite"/></rect>
+  <rect x="624.31" y="82" width="26.20" height="18" rx="9" fill="#f59e0b"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.12s" repeatCount="indefinite"/></rect>
+  <rect x="650.51" y="82" width="21.50" height="18" rx="9" fill="#ef4444"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.36s" repeatCount="indefinite"/></rect>
+  <rect x="672.01" y="82" width="19.99" height="18" rx="9" fill="#a855f7"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.60s" repeatCount="indefinite"/></rect>
   <g><circle cx="30" cy="120" r="4" fill="#8b5cf6"/><text x="40" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">TypeScript 61%</text></g>
   <g><circle cx="240" cy="120" r="4" fill="#22c55e"/><text x="250" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Python 21%</text></g>
   <g><circle cx="450" cy="120" r="4" fill="#38bdf8"/><text x="460" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Go 7%</text></g>

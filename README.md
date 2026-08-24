@@ -15,3 +15,7 @@
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="100%" alt="Contribution Graph" />
 
 <img src="./profile-3d-contrib/build-map.svg" width="100%" alt="What I build" />
+
+## Latest Blog Posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->

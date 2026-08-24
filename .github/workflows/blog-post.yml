@@ -14,8 +14,6 @@ jobs:
         with:
           feed_list: "https://dev.to/feed/imranshiundu,https://medium.com/feed/@imranshiundu"
           max_post_count: 5
-          dateformat: "MMM DD, YYYY"
-          template_post_title: "- [$title]($url) - $date"
-          template_section_title: "## Latest Blog Posts"
-          post_list_end: "</details>"
-          no_item_message: "No blog posts found."
+          date_format: "MMM DD, YYYY"
+          template: "- [$title]($url) - $date"
+          commit_message: "chore: update blog posts"

@@ -17,5 +17,4 @@
 <img src="./profile-3d-contrib/build-map.svg" width="100%" alt="What I build" />
 
 ## Latest Blog Posts
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->- [Built Anyway!](https://medium.com/@imranshiundu/built-anyway-560508358c52?source=rss-b13da006d33e------2) - 5252 DD, YYYY- [Why We Built Orb21 — Imran Shiundu.](https://medium.com/@imranshiundu/why-we-built-orb21-a-contributor-powered-incubator-for-founders-who-dont-want-to-burn-out-4a533dde887a?source=rss-b13da006d33e------2) - 077 DD, YYYY- [Clean Code Architecture in Full-Stack Apps — Imran Shiundu](https://medium.com/@imranshiundu/clean-code-architecture-in-full-stack-apps-imran-shiundu-c4b23bceefc7?source=rss-b13da006d33e------2) - 5757 DD, YYYY- [Scaling Startups with Tech — Imran Shiundu](https://medium.com/@imranshiundu/scaling-startups-with-tech-imran-shiundu-7c0819cc22b3?source=rss-b13da006d33e------2) - 3737 DD, YYYY- [Vibe Coding: The Siren&#39;s Song for Clients &lpar;And Our New Pair Programming Buddy&rpar; - Imran Shiundu](https://dev.to/imranshiundu/vibe-coding-the-sirens-song-for-clients-and-our-new-pair-programming-buddy-imran-shiundu-3a2h) - 5151 DD, YYYY<!-- BLOG-POST-LIST:END -->

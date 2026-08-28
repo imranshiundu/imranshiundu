@@ -4,10 +4,10 @@
   <text x="28" y="38" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Language activity</text>
   <text x="28" y="61" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Generated from GitHub public repository language bytes</text>
   <rect x="28" y="82" width="664" height="18" rx="9" fill="#30363d"/>
-  <rect x="28.00" y="82" width="407.11" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
-  <rect x="435.11" y="82" width="141.50" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
-  <rect x="576.61" y="82" width="47.90" height="18" rx="9" fill="#38bdf8"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.88s" repeatCount="indefinite"/></rect>
-  <rect x="624.51" y="82" width="25.91" height="18" rx="9" fill="#f59e0b"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.12s" repeatCount="indefinite"/></rect>
+  <rect x="28.00" y="82" width="407.12" height="18" rx="9" fill="#8b5cf6"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.40s" repeatCount="indefinite"/></rect>
+  <rect x="435.12" y="82" width="141.49" height="18" rx="9" fill="#22c55e"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.64s" repeatCount="indefinite"/></rect>
+  <rect x="576.62" y="82" width="47.89" height="18" rx="9" fill="#38bdf8"><animate attributeName="opacity" values="0.72;1;0.72" dur="2.88s" repeatCount="indefinite"/></rect>
+  <rect x="624.51" y="82" width="25.90" height="18" rx="9" fill="#f59e0b"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.12s" repeatCount="indefinite"/></rect>
   <rect x="650.42" y="82" width="21.25" height="18" rx="9" fill="#ef4444"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.36s" repeatCount="indefinite"/></rect>
   <rect x="671.67" y="82" width="20.33" height="18" rx="9" fill="#a855f7"><animate attributeName="opacity" values="0.72;1;0.72" dur="3.60s" repeatCount="indefinite"/></rect>
   <g><circle cx="30" cy="120" r="4" fill="#8b5cf6"/><text x="40" y="124" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">TypeScript 61%</text></g>

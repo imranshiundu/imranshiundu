@@ -1,20 +1,24 @@
-<img src="./profile-3d-contrib/intro-banner.svg" width="100%" alt="Hi, I'm Imran. I build useful software systems." />
+# Imran Shiundu — Multi-product builder
+
+> Building TapTap and other software systems. I ship fast, full-stack products — from idea to production.
 
 <a href="https://imranisdev.top"><img src="./profile-3d-contrib/link-strip.svg" width="100%" alt="Website, LinkedIn, GitHub, and Email links" /></a>
 
 ## Skills
 
-<img src="./profile-3d-contrib/skills-flow.svg" width="100%" alt="Animated skills flow" />
+<img src="./profile-3d-contrib/skills-flow.svg" width="100%" alt="Core strengths: Web apps, Backend systems, AI and markets — built with Next.js, TypeScript, Node.js, PostgreSQL, Python, Tailwind" />
 
 ## Language activity
 
-<img src="./profile-3d-contrib/language-pulse.svg" width="100%" alt="Language activity generated from public repository language data" />
+<img src="./profile-3d-contrib/language-pulse.svg" width="100%" alt="Top languages: TypeScript 61%, Python 21%, Go 7%, Dart 4%, C 3%, JavaScript 3%" />
 
-## Contribution graph
+## Contribution streak
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="100%" alt="Contribution Graph" />
+<img src="https://streak-stats.demolab.com?user=imranshiundu&theme=dark&background=0D1117&ring=B794F4&fire=9F7AEA&currStreakLabel=E9D5FF&sideLabels=ffffff&currStreakNum=ffffff&sideNums=ffffff&dates=8B5CF6" width="100%" alt="GitHub contribution streak stats" />
 
-<img src="./profile-3d-contrib/build-map.svg" width="100%" alt="What I build" />
+## What I build
+
+<img src="./profile-3d-contrib/build-map.svg" width="100%" alt="Build map: AI systems, Trading infrastructure, Web products, Backend platforms" />
 
 ## Latest Blog Posts
 

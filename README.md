@@ -1,20 +1,67 @@
-<img src="./profile-3d-contrib/intro-banner.svg" width="100%" alt="Hi, I'm Imran. I build useful software systems." />
+<!--
+  Imran Shiundu — Software engineer & founder based in Nairobi.
+  Building TapTap (NFC + M-Pesa cashless events), Orb21 (skunkworks), Patricia (legal AI), Gravity (AI OS).
+  See https://imranisdev.top for selected work and contact.
+-->
 
-<a href="https://imranisdev.top"><img src="./profile-3d-contrib/link-strip.svg" width="100%" alt="Website, LinkedIn, GitHub, and Email links" /></a>
+<h1 align="center">Imran Shiundu</h1>
+<p align="center">
+  <strong>Software engineer building production systems in Nairobi.</strong><br/>
+  TapTap cashless events · Orb21 skunkworks · Patricia legal AI · Gravity AI OS<br/>
+  <a href="https://imranisdev.top">imranisdev.top</a> · <a href="mailto:imran@taptap.africa">imran@taptap.africa</a>
+</p>
 
-## Skills
+<p align="center">
+  <a href="https://imranisdev.top"><img src="./profile-3d-contrib/link-strip.svg" width="100%" alt="Open my portfolio website, LinkedIn, GitHub, and email — no decorative icons, plain SVG buttons" /></a>
+</p>
 
-<img src="./profile-3d-contrib/skills-flow.svg" width="100%" alt="Animated skills flow" />
+## What I ship
+
+I design and ship full-stack systems end-to-end: payments, web apps, embedded firmware, and the integrations between them. Most of what I build is in production and used by real people every week.
+
+- **TapTap** — NFC + M-Pesa cashless payment layer for live events in Africa. Three-sided product (attendee, host, vendor) on a single ledger. https://github.com/imranshiundu
+- **Orb21** — Skunkworks studio and 30–60 day ship protocol. Founder & principal architect. https://github.com/imranshiundu
+- **Patricia** — Legal intelligence and case-law audio platform. TypeScript, AI search, research tooling. https://github.com/imranshiundu/Patricia
+- **Gravity** — Unified AI operating system: memory, voice, coding, gateway, defensive modules. https://github.com/imranshiundu/Gravity
+- **Hoovi / Hoo Browser** — Movie database and a Linux-first experimental browser (Electron, privacy-first defaults). https://github.com/imranshiundu/Hoovi
+
+## Stack
+
+`TypeScript` `Next.js` `React` `Node.js` `Python` `Java` `Spring Boot` `PostgreSQL` `Redis` `M-Pesa Daraja` `ESP32` `Electron` `Ollama` `Docker` `Linux`
+
+## What I'm working with now
+
+<p align="center">
+  <img src="./profile-3d-contrib/skills-flow.svg" width="100%" alt="Skills flow: TypeScript, Next.js, Node, Python, Java, Spring Boot, PostgreSQL, Redis, M-Pesa, ESP32, Electron, Ollama, Linux" />
+</p>
+
+## Selected work
+
+<a href="https://imranisdev.top/work"><img src="./profile-3d-contrib/build-map.svg" width="100%" alt="Build map of selected production systems: TapTap NFC payments, Patricia legal AI, Gravity AI OS, Hoovi media browser" /></a>
 
 ## Language activity
 
-<img src="./profile-3d-contrib/language-pulse.svg" width="100%" alt="Language activity generated from public repository language data" />
+<p align="center">
+  <img src="./profile-3d-contrib/language-pulse.svg" width="100%" alt="Language activity generated from public repository language data across my GitHub repos" />
+</p>
 
-## Contribution graph
+## Recent activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="100%" alt="Contribution Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=imranshiundu&custom_title=Contribution%20Graph&theme=github-compact&hide_border=true&bg_color=0D1117&color=B794F4&line=9F7AEA&point=E9D5FF&area=true&area_color=8B5CF6" width="100%" alt="Imran Shiundu GitHub contribution graph showing recent commits across public repositories" />
 
-<img src="./profile-3d-contrib/build-map.svg" width="100%" alt="What I build" />
+## Writing
 
-## Latest Blog Posts
-<!-- BLOG-POST-LIST:START -->- [Built Anyway!](https://medium.com/@imranshiundu/built-anyway-560508358c52?source=rss-b13da006d33e------2) - 5252 DD, YYYY- [Why We Built Orb21 — Imran Shiundu.](https://medium.com/@imranshiundu/why-we-built-orb21-a-contributor-powered-incubator-for-founders-who-dont-want-to-burn-out-4a533dde887a?source=rss-b13da006d33e------2) - 077 DD, YYYY- [Clean Code Architecture in Full-Stack Apps — Imran Shiundu](https://medium.com/@imranshiundu/clean-code-architecture-in-full-stack-apps-imran-shiundu-c4b23bceefc7?source=rss-b13da006d33e------2) - 5757 DD, YYYY- [Scaling Startups with Tech — Imran Shiundu](https://medium.com/@imranshiundu/scaling-startups-with-tech-imran-shiundu-7c0819cc22b3?source=rss-b13da006d33e------2) - 3737 DD, YYYY- [Vibe Coding: The Siren&#39;s Song for Clients &lpar;And Our New Pair Programming Buddy&rpar; - Imran Shiundu](https://dev.to/imranshiundu/vibe-coding-the-sirens-song-for-clients-and-our-new-pair-programming-buddy-imran-shiundu-3a2h) - 5151 DD, YYYY<!-- BLOG-POST-LIST:END -->
+I write about the work, not the hype. Process notes, architecture decisions, and the small mistakes that taught me something.
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+## How to work with me
+
+I'm open to a small number of engagements each quarter: full-stack product builds, M-Pesa / payments integrations, technical advising, and short-form tutoring.
+
+- **Portfolio & contact form** — https://imranisdev.top
+- **Email** — imran@taptap.africa
+- **LinkedIn** — https://linkedin.com/in/imranshiundu
+
+Process is on the portfolio: scope, weekly demos, production deploy, 30-day post-launch runway. No surprise invoices.

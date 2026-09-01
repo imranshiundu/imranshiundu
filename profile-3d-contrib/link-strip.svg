@@ -33,7 +33,7 @@
       <rect x="317" y="1" width="130" height="34" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
       <text class="label" x="363" y="23">GitHub</text>
     </a>
-    <a href="mailto:imranshiundu@gmail.com" target="_blank">
+    <a href="mailto:imran@taptap.africa" target="_blank">
       <rect x="474" width="132" height="36" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".95"/>
       <rect x="475" y="1" width="130" height="34" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
       <text class="label" x="521" y="23">Email</text>

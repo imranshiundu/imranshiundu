@@ -1,11 +1,11 @@
 blank_issues_enabled: true
 contact_links:
-  - name: 📧 Quick Email
-    url: mailto:imranshiundu@gmail.com
-    about: For urgent matters, email me directly
-  - name: 💼 LinkedIn
+  - name: Email
+    url: mailto:imran@taptap.africa
+    about: For project inquiries and engagements
+  - name: LinkedIn
     url: https://linkedin.com/in/imranshiundu
-    about: Connect with me professionally
-  - name: 🌐 Portfolio
+    about: Connect professionally
+  - name: Portfolio
     url: https://imranisdev.top
-    about: View my work and contact form
+    about: Selected work, process, and contact form
